@@ -1,0 +1,47 @@
+.navPill {
+  background-color: var(--orange-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 50px 15px;
+  border-radius: 36px;
+  right: 0;
+  top: 165px;
+  width: 80px;
+}
+
+.pill {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.pill:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.pillText {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.2s ease-out;
+  position: absolute;
+  right: calc(100% + 15px);
+  height: 100%;
+  background-color: var(--orange-color);
+  border-radius: 25px 0 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.pill:hover .pillText {
+  width: 120px;
+}
+
+.pillIcon {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 auto;
+}

@@ -1,30 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import Maynooth from './pages/Maynooth';
-import RoadBikes from './pages/RoadBikes';
-import ChefRecipes from './pages/ChefRecipes';
-import Home from './pages/Home';
+import Maynooth from './pages/Maynooth/Maynooth';
+import RoadBikes from './pages/RoadBikes/RoadBikes';
+import ChefRecipes from './pages/ChefRecipes/ChefRecipes';
+import Home from './pages/Home/Home';
+import NavPill from './components/NavPill/NavPill';
 
 export default () => (
-  <Router>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/maynooth'>Maynooth</Link>
-          </li>
-          <li>
-            <Link to='/road-bikes'>Road Bikes</Link>
-          </li>
-          <li>
-            <Link to='/chef-recipes'>Chef Recipes</Link>
-          </li>
-        </ul>
-      </nav>
-
+  <>
+    <NavPill />
+    <Router>
       <Switch>
         <Route path='/maynooth'>
           <Maynooth />
@@ -39,6 +24,6 @@ export default () => (
           <Home />
         </Route>
       </Switch>
-    </div>
-  </Router>
+    </Router>
+  </>
 );
