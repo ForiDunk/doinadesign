@@ -1,0 +1,11 @@
+.components {
+  display: flex;
+  flex-direction: column;
+}
+.component {
+  display: flex;
+  margin-bottom: 20px;
+}
+.component span {
+  margin-right: 20px;
+}
