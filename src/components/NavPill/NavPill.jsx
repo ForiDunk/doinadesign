@@ -18,12 +18,12 @@ export default () => (
     </div>
 
     <div className={styles.pill}>
-      <div className={styles.pillText}>About me</div>
+      <div className={styles.pillText}>About Me</div>
       <About className={styles.pillIcon} />
     </div>
 
     <div className={styles.pill}>
-      <div className={styles.pillText}>Other stuff</div>
+      <div className={styles.pillText}>Other</div>
       <Other className={styles.pillIcon} />
     </div>
   </div>
