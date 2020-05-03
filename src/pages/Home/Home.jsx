@@ -1,42 +1,59 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import { ReactComponent as Linkedin } from './icon-linkedin.svg';
-import { ReactComponent as Instagram } from './icon-instagram.svg';
-import { ReactComponent as Mail } from './icon-mail.svg';
-import headerBackground from './header.svg';
+import Button from '../../components/Button/Button';
 
-const openTo = (link) => window.open(link, '_blank');
+import Header from './Header';
+
+import maynooth from './maynooth.png';
+import roadBikes from './road-bikes.png';
+import chefRecipe1 from './chef-recipe1.png';
+import chefRecipe2 from './chef-recipe2.png';
 
 export default () => (
   <div className={styles.home}>
-    <div
-      style={{ backgroundImage: `url(${headerBackground})` }}
-      className={styles.header}
-    >
-      <div className={styles.title}>Hi, there! Welcome to my portfolio!</div>
-      <div className={styles.text}>
-        I am Doina, an aspiring UX/UI Designer based in Brasov, Romania.
+    <Header />
+
+    <div id='projects' className={styles.projects}>
+      <div className={styles.title}>PROJECTS</div>
+
+      <div className={styles.project}>
+        <img className={styles.projectImg} src={maynooth} alt='Maynooth' />
+        <div className={styles.projectMeta}>
+          <div className={styles.title}>MAYNOOTH FURNITURE</div>
+          <div className={styles.text}>
+            A conceptual e-commerce website selling affordable high-end design
+            furniture made in Ireland.
+          </div>
+          <Button>Show more</Button>
+        </div>
       </div>
-      <div className={styles.socials}>
-        <Linkedin
-          onClick={() =>
-            openTo(
-              'https://www.linkedin.com/in/lisneac-forreiter-doina-b320bb183/'
-            )
-          }
-          className={styles.social}
-        />
-        <Instagram
-          onClick={() => openTo('https://www.instagram.com/marley_fox92/')}
-          className={styles.social}
-        />
-        <a
-          href='mailto:doinalisneac92@gmail.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Mail className={styles.social} />
-        </a>
+
+      <div className={styles.project}>
+        <div className={styles.projectMeta}>
+          <div className={styles.title}>ROAR BIKES</div>
+          <div className={styles.text}>
+            A conceptual e-commerce website selling contemporary bicycles
+            exclusively from their own website.
+          </div>
+          <Button>Show more</Button>
+        </div>
+        <img className={styles.projectImg} src={roadBikes} alt='Road Bikes' />
+      </div>
+
+      <div className={styles.project}>
+        <div className={styles.projectImg}>
+          <img src={chefRecipe1} alt='Chef Recipe 1' />
+          <img src={chefRecipe2} alt='Chef Recipe 2' />
+        </div>
+        <div className={styles.projectMeta}>
+          <div className={styles.title}>CHEF RECIPES</div>
+          <div className={styles.text}>
+            A conceptual recipe app which can make user’s life easier and
+            cooking more entartaining by the possibility of sharing the results
+            with friends on social media.
+          </div>
+          <Button>Show more</Button>
+        </div>
       </div>
     </div>
   </div>

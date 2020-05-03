@@ -1,16 +1,22 @@
 @import '../../variables.scss';
-
+/***** GENERAL *****/
 .home {
   width: 100%;
 }
+.header,
+.projects {
+  padding: $padding $padding 0 $padding;
+}
 .title {
+  font-weight: bold;
   color: $orange-color;
 }
 .text {
   color: #ffffff;
 }
+
+/***** HEADER *****/
 .header {
-  padding: $padding $padding 0 $padding;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -21,21 +27,19 @@
   background-size: cover;
   background-position: bottom;
 
-  & .title {
+  .title {
     font-size: cvw(56);
   }
 
-  & .text {
+  .text {
     font-size: cvw(32);
     margin: cvw(162.5) 0;
     max-width: cvw(606);
   }
 }
-
 .socials {
   margin-bottom: cvw(205);
 }
-
 .social {
   cursor: pointer;
   margin-right: cvw(97);
@@ -44,5 +48,65 @@
 
   &:last-child {
     margin: 0;
+  }
+}
+
+/***** PROJECTS *****/
+.projects {
+  padding-top: cvw(94);
+
+  .title {
+    font-size: cvw(36);
+    margin-bottom: cvw(66);
+  }
+
+  .project {
+    display: flex;
+    justify-content: space-between;
+
+    .projectImg {
+      display: flex;
+      align-items: center;
+      max-width: 50%;
+      height: auto;
+
+      img {
+        height: 100%;
+        &:last-child {
+          margin-left: cvw(117);
+        }
+      }
+    }
+
+    .projectMeta {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-align: end;
+      padding-bottom: cvw(32);
+      width: 50%;
+      .title {
+        font-size: cvw(28);
+        margin: 0;
+      }
+      .text {
+        font-size: cvw(24);
+        line-height: cvw(50);
+      }
+    }
+
+    &:nth-child(odd) {
+      margin: cvw(209) 0;
+      .projectMeta {
+        align-items: flex-start;
+        text-align: start;
+        padding-bottom: cvw(24);
+      }
+    }
+
+    &:last-child {
+      height: cvw(426);
+    }
   }
 }

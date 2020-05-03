@@ -1,22 +1,23 @@
 @import '../../variables.scss';
 .button {
   background-color: $orange-color;
+  font-family: 'Montserrat', sans-serif;
   border: none;
   color: #ffffff;
-  font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: cvw(24);
   text-transform: uppercase;
-  padding: 25px 95px;
-  border-radius: 36px;
+  width: cvw(360);
+  padding: cvw(25);
+  border-radius: cvw(39.5);
   cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px cvw(10) cvw(10) rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    filter: brightness(115%);
+    background-color: lighten($color: $orange-color, $amount: 15%);
   }
   &:active {
-    filter: brightness(85%);
+    background-color: darken($color: $orange-color, $amount: 15%);
   }
 }
