@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './Button.module.css';
-import classes from './Button.module.css';
+import styles from './Button.module.scss';
 
 export default ({ children }) => (
-  <button className={classes.button}>{children}</button>
+  <button className={styles.button}>{children}</button>
 );

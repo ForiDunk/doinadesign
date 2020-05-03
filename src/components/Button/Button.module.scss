@@ -1,5 +1,6 @@
+@import '../../variables.scss';
 .button {
-  background-color: var(--orange-color);
+  background-color: $orange-color;
   border: none;
   color: #ffffff;
   font-style: normal;
@@ -11,10 +12,11 @@
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
-}
-.button:hover {
-  filter: brightness(115%);
-}
-.button:active {
-  filter: brightness(85%);
+
+  &:hover {
+    filter: brightness(115%);
+  }
+  &:active {
+    filter: brightness(85%);
+  }
 }

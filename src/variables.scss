@@ -1,0 +1,7 @@
+@function cvw($pixels) {
+  @return ($pixels / 1920) * 100vw;
+}
+
+$orange-color: #f3b541;
+$background-color: #2b65b8;
+$padding: cvw(250);

@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.home {
+  width: 100%;
+}
+.title {
+  color: $orange-color;
+}
+.text {
+  color: #ffffff;
+}
+.header {
+  padding: $padding $padding 0 $padding;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  & .title {
+    font-size: cvw(56);
+    margin-bottom: cvw(91);
+  }
+
+  & .text {
+    font-size: cvw(32);
+    margin-bottom: cvw(234);
+    max-width: cvw(606);
+  }
+}
+
+.socials {
+  margin-bottom: cvw(205);
+}
+
+.social {
+  cursor: pointer;
+  margin-right: cvw(97);
+  height: cvw(50);
+  width: cvw(50);
+
+  &:last-child {
+    margin: 0;
+  }
+}
