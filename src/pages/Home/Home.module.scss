@@ -23,12 +23,11 @@
 
   & .title {
     font-size: cvw(56);
-    margin-bottom: cvw(91);
   }
 
   & .text {
     font-size: cvw(32);
-    margin-bottom: cvw(234);
+    margin: cvw(162.5) 0;
     max-width: cvw(606);
   }
 }
