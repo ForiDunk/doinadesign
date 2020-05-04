@@ -6,7 +6,7 @@
 .header,
 .projects,
 .certificates {
-  padding: cvw(120) $padding cvw(80) $padding;
+  padding: $padding;
 }
 .title {
   font-weight: bold;
@@ -24,9 +24,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-color: $background-color2;
 
   .title {
     font-size: cvw(56);
@@ -39,7 +37,6 @@
   }
 }
 .socials {
-  margin-bottom: cvw(205);
 }
 .social {
   cursor: pointer;
@@ -114,6 +111,7 @@
 
 /***** CERTIFICATES *****/
 .certificates {
+  background-color: $background-color2;
   .title {
     font-size: cvw(36);
     margin-bottom: cvw(66);

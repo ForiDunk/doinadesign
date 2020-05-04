@@ -3,15 +3,10 @@ import styles from './Home.module.scss';
 import { ReactComponent as Linkedin } from './icon-linkedin.svg';
 import { ReactComponent as Instagram } from './icon-instagram.svg';
 import { ReactComponent as Mail } from './icon-mail.svg';
-import headerBackground from './header.svg';
 
 export default ({ openTo }) => (
   <>
-    <div
-      id='home'
-      style={{ backgroundImage: `url(${headerBackground})` }}
-      className={styles.header}
-    >
+    <div id='home' className={styles.header}>
       <div className={styles.title}>Hi, there! Welcome to my portfolio!</div>
       <div className={styles.text}>
         I am Doina, an aspiring UX/UI Designer based in Brasov, Romania.

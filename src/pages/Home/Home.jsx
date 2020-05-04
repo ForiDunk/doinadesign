@@ -12,5 +12,9 @@ export default () => (
     <Header openTo={openTo} />
     <Projects />
     <Certificates openTo={openTo} />
+
+    <div>
+      <div className={styles.title}>ABOUT ME</div>
+    </div>
   </div>
 );
