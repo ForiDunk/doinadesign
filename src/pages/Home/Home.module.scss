@@ -4,8 +4,9 @@
   width: 100%;
 }
 .header,
-.projects {
-  padding: $padding $padding 0 $padding;
+.projects,
+.certificates {
+  padding: cvw(120) $padding cvw(80) $padding;
 }
 .title {
   font-weight: bold;
@@ -107,6 +108,40 @@
 
     &:last-child {
       height: cvw(426);
+    }
+  }
+}
+
+/***** CERTIFICATES *****/
+.certificates {
+  .title {
+    font-size: cvw(36);
+    margin-bottom: cvw(66);
+  }
+
+  .certContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .certList {
+      &:first-child {
+        margin-right: cvw(76);
+      }
+      .text {
+        font-size: cvw(24);
+        line-height: cvw(50);
+        font-weight: bold;
+        margin-bottom: cvw(40);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:last-child {
+          margin: 0;
+        }
+        &:hover {
+          color: $orange-color;
+        }
+      }
     }
   }
 }

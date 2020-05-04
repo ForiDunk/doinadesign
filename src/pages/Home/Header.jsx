@@ -5,11 +5,10 @@ import { ReactComponent as Instagram } from './icon-instagram.svg';
 import { ReactComponent as Mail } from './icon-mail.svg';
 import headerBackground from './header.svg';
 
-const openTo = (link) => window.open(link, '_blank');
-
-export default () => (
+export default ({ openTo }) => (
   <>
     <div
+      id='home'
       style={{ backgroundImage: `url(${headerBackground})` }}
       className={styles.header}
     >
