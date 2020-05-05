@@ -6,7 +6,8 @@
 .header,
 .projects,
 .certificates,
-.about {
+.about,
+.others {
   padding: $padding;
 }
 .title {
@@ -15,6 +16,20 @@
 }
 .text {
   color: #ffffff;
+}
+
+.projects,
+.certificates,
+.about,
+.others {
+  .title {
+    font-size: cvw(36);
+    margin-bottom: cvw(66);
+  }
+  .text {
+    font-size: cvw(24);
+    line-height: cvw(50);
+  }
 }
 
 /***** HEADER *****/
@@ -33,6 +48,7 @@
 
   .text {
     font-size: cvw(32);
+    line-height: cvw(39);
     margin: cvw(162.5) 0;
     max-width: cvw(606);
   }
@@ -53,11 +69,6 @@
 /***** PROJECTS *****/
 .projects {
   padding-top: cvw(94);
-
-  .title {
-    font-size: cvw(36);
-    margin-bottom: cvw(66);
-  }
 
   .project {
     display: flex;
@@ -89,10 +100,6 @@
         font-size: cvw(28);
         margin: 0;
       }
-      .text {
-        font-size: cvw(24);
-        line-height: cvw(50);
-      }
     }
 
     &:nth-child(odd) {
@@ -113,10 +120,6 @@
 /***** CERTIFICATES *****/
 .certificates {
   background-color: $background-color2;
-  .title {
-    font-size: cvw(36);
-    margin-bottom: cvw(66);
-  }
 
   .certContainer {
     display: flex;
@@ -127,8 +130,6 @@
         margin-right: cvw(76);
       }
       .text {
-        font-size: cvw(24);
-        line-height: cvw(50);
         font-weight: bold;
         margin-bottom: cvw(40);
         cursor: pointer;
@@ -147,14 +148,8 @@
 
 /***** ABOUT ME *****/
 .about {
-  .title {
-    font-size: cvw(36);
-    margin-bottom: cvw(66);
-  }
+  background-color: $background-color2;
   .text {
-    font-size: cvw(24);
-    line-height: cvw(50);
-
     p {
       margin: 0;
 
@@ -164,3 +159,5 @@
     }
   }
 }
+
+/***** OTHERS *****/

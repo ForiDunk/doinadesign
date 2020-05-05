@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import certificates from './certificates';
+import certificates from './certificatesData.json';
 
 const firstCol = certificates.slice(0, 8);
 const secondCol = certificates.slice(8, 15);

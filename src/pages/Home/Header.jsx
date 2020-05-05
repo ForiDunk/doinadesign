@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import { ReactComponent as Linkedin } from './icon-linkedin.svg';
-import { ReactComponent as Instagram } from './icon-instagram.svg';
-import { ReactComponent as Mail } from './icon-mail.svg';
+import { ReactComponent as Linkedin } from '../../assets/svgs/icon-linkedin.svg';
+import { ReactComponent as Instagram } from '../../assets/svgs/icon-instagram.svg';
+import { ReactComponent as Mail } from '../../assets/svgs/icon-mail.svg';
 
 export default ({ openTo }) => (
   <>

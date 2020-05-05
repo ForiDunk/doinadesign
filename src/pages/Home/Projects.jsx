@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Home.module.scss';
 import Button from '../../components/Button/Button';
-import maynooth from './maynooth.png';
-import roadBikes from './road-bikes.png';
-import chefRecipe1 from './chef-recipe1.png';
-import chefRecipe2 from './chef-recipe2.png';
+import maynooth from '../../assets/images/maynooth.png';
+import roadBikes from '../../assets/images/road-bikes.png';
+import chefRecipe1 from '../../assets/images/chef-recipe1.png';
+import chefRecipe2 from '../../assets/images/chef-recipe2.png';
 
 export default () => (
   <div id='projects' className={styles.projects}>
