@@ -15,6 +15,6 @@ export default () => (
     <Projects />
     <Certificates openTo={openTo} />
     <About />
-    <Others />
+    <Others openTo={openTo} />
   </div>
 );

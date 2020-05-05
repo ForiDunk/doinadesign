@@ -161,3 +161,17 @@
 }
 
 /***** OTHERS *****/
+.others {
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: cvw(72);
+
+    .img {
+      width: cvw(150);
+      height: auto;
+      cursor: pointer;
+    }
+  }
+}
