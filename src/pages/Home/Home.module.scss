@@ -5,7 +5,8 @@
 }
 .header,
 .projects,
-.certificates {
+.certificates,
+.about {
   padding: $padding;
 }
 .title {
@@ -35,17 +36,17 @@
     margin: cvw(162.5) 0;
     max-width: cvw(606);
   }
-}
-.socials {
-}
-.social {
-  cursor: pointer;
-  margin-right: cvw(97);
-  height: cvw(50);
-  width: cvw(50);
+  .socials {
+    .social {
+      cursor: pointer;
+      margin-right: cvw(97);
+      height: cvw(50);
+      width: cvw(50);
 
-  &:last-child {
-    margin: 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -139,6 +140,26 @@
         &:hover {
           color: $orange-color;
         }
+      }
+    }
+  }
+}
+
+/***** ABOUT ME *****/
+.about {
+  .title {
+    font-size: cvw(36);
+    margin-bottom: cvw(66);
+  }
+  .text {
+    font-size: cvw(24);
+    line-height: cvw(50);
+
+    p {
+      margin: 0;
+
+      &:first-child {
+        margin-bottom: cvw(40);
       }
     }
   }
