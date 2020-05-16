@@ -16,10 +16,15 @@
 
   div {
     padding: cvw(12);
-    border-radius: 50%;
+    border-radius: cvw(32);
+    width: cvw(64);
+    height: cvw(64);
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover,
     &.active {
