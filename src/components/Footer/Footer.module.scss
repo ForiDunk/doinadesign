@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: cvw(61) $padding;
+
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: cvw(16);
+    line-height: cvw(50);
+    color: #ffffff;
+  }
+
+  .socials {
+    .social {
+      cursor: pointer;
+      margin-right: cvw(24);
+      height: cvw(30);
+      width: cvw(30);
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -47,6 +47,7 @@
   }
 
   .text {
+    font-weight: 500;
     font-size: cvw(32);
     line-height: cvw(39);
     margin: cvw(162.5) 0;
@@ -174,6 +175,7 @@
 
 /***** OTHERS *****/
 .others {
+  padding-bottom: cvw(50);
   .row {
     width: 100%;
     display: flex;

@@ -1,13 +1,13 @@
 import React from 'react';
-// import Tilt from 'react-tilt';
 import Tilt from 'react-parallax-tilt';
 import styles from './Home.module.scss';
 import data from './othersData';
+import { openTo } from '../../utils/navigation';
 
 const firstRow = data.slice(0, 8);
 const secondRow = data.slice(8, 16);
 
-export default ({ openTo }) => (
+export default () => (
   <div id='about' className={styles.others}>
     <div className={styles.title}>OTHER ARTSY HOBBIES</div>
     <div className={styles.text}>

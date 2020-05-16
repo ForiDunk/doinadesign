@@ -4,6 +4,7 @@ import Maynooth from './pages/Maynooth/Maynooth';
 import RoadBikes from './pages/RoadBikes/RoadBikes';
 import ChefRecipes from './pages/ChefRecipes/ChefRecipes';
 import Home from './pages/Home/Home';
+import Footer from './components/Footer/Footer';
 
 export default () => (
   <Router>
@@ -17,9 +18,10 @@ export default () => (
       <Route path='/chef-recipes'>
         <ChefRecipes />
       </Route>
-      <Route path='/'>
+      <Route exact path='/'>
         <Home />
       </Route>
     </Switch>
+    <Footer />
   </Router>
 );
