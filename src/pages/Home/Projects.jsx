@@ -6,9 +6,20 @@ import maynooth from '../../assets/images/maynooth.png';
 import roadBikes from '../../assets/images/road-bikes.png';
 import chefRecipe1 from '../../assets/images/chef-recipe1.png';
 import chefRecipe2 from '../../assets/images/chef-recipe2.png';
+import { useEffect } from 'react';
 
-export default () => {
+export default ({ setActive }) => {
   const history = useHistory();
+
+  useEffect(() => {
+    var observer = new IntersectionObserver(
+      function (entries) {
+        if (entries[0].isIntersecting === true) setActive('projects');
+      },
+      { threshold: [0.1] }
+    );
+    observer.observe(document.querySelector('#projects'));
+  }, [setActive]);
 
   return (
     <div id='projects' className={styles.projects}>

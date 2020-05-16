@@ -1,0 +1,34 @@
+@import '../../variables.scss';
+
+.navPill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: cvw(80);
+  height: cvw(360);
+  background-color: $orange-color;
+  border-radius: cvw(40);
+  position: fixed;
+  z-index: 2;
+  right: cvw(104);
+  justify-content: space-evenly;
+  top: 25%;
+
+  div {
+    padding: cvw(12);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    background-color: transparent;
+
+    &:hover,
+    &.active {
+      background-color: #f09b1c;
+    }
+  }
+
+  svg {
+    height: cvw(40);
+    width: cvw(40);
+  }
+}

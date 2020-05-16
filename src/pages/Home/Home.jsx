@@ -1,16 +1,23 @@
 import React from 'react';
 import styles from './Home.module.scss';
-
 import Header from './Header';
 import Projects from './Projects';
 import About from './About';
 import Others from './Others';
+import NavPill from '../../components/NavPill/NavPill';
+import { useState } from 'react';
 
-export default () => (
-  <div className={styles.home}>
-    <Header />
-    <Projects />
-    <About />
-    <Others />
-  </div>
-);
+export default () => {
+  const [active, setActive] = useState('home');
+  return (
+    <>
+      <NavPill active={active} />
+      <div className={styles.home}>
+        <Header setActive={setActive} />
+        <Projects setActive={setActive} />
+        <About setActive={setActive} />
+        <Others setActive={setActive} />
+      </div>
+    </>
+  );
+};
