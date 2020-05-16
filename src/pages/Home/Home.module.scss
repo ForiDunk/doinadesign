@@ -2,9 +2,16 @@
 /***** GENERAL *****/
 .home {
   width: 100%;
+
+  button {
+    position: relative;
+    z-index: 1;
+  }
 }
 .header {
   padding: $padding;
+  position: relative;
+  z-index: 1;
 }
 .projects,
 .about,
@@ -14,8 +21,12 @@
 .title {
   font-weight: bold;
   color: $orange-color;
+  position: relative;
+  z-index: 1;
 }
 .text {
+  position: relative;
+  z-index: 1;
   color: #ffffff;
 }
 
@@ -87,6 +98,8 @@
       height: auto;
 
       img {
+        position: relative;
+        z-index: 1;
         height: 100%;
         &:last-child {
           margin-left: cvw(117);
@@ -156,6 +169,8 @@
     }
 
     .avatar {
+      position: relative;
+      z-index: 1;
       flex: 0 0 auto;
       background-color: lightgrey;
       border-radius: 50%;

@@ -16,6 +16,8 @@
 
   .socials {
     .social {
+      position: relative;
+      z-index: 1;
       cursor: pointer;
       margin-right: cvw(24);
       height: cvw(30);
