@@ -3,12 +3,13 @@
 .home {
   width: 100%;
 }
-.header,
+.header {
+  padding: $padding;
+}
 .projects,
-.certificates,
 .about,
 .others {
-  padding: $padding;
+  padding: cvw(80) $padding;
 }
 .title {
   font-weight: bold;
@@ -19,7 +20,6 @@
 }
 
 .projects,
-.certificates,
 .about,
 .others {
   .title {
@@ -30,6 +30,11 @@
     font-size: cvw(24);
     line-height: cvw(50);
   }
+}
+
+.about,
+.others {
+  border-top: cvw(8) dotted rgba(255, 255, 255, 0.5);
 }
 
 /***** HEADER *****/
@@ -114,6 +119,9 @@
 
     &:last-child {
       height: cvw(426);
+      .projectMeta {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -130,45 +138,29 @@
   }
 }
 
-/***** CERTIFICATES *****/
-.certificates {
-  background-color: $background-color2;
-
-  .certContainer {
+/***** ABOUT ME *****/
+.about {
+  .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    .text {
+      width: 50%;
+      p {
+        margin: 0;
 
-    .certList {
-      &:first-child {
-        margin-right: cvw(76);
-      }
-      .text {
-        font-weight: bold;
-        margin-bottom: cvw(40);
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-
-        &:last-child {
-          margin: 0;
-        }
-        &:hover {
-          color: $orange-color;
+        &:first-child {
+          margin-bottom: cvw(40);
         }
       }
     }
-  }
-}
 
-/***** ABOUT ME *****/
-.about {
-  background-color: $background-color2;
-  .text {
-    p {
-      margin: 0;
-
-      &:first-child {
-        margin-bottom: cvw(40);
-      }
+    .avatar {
+      flex: 0 0 auto;
+      background-color: lightgrey;
+      border-radius: 50%;
+      height: cvw(450);
+      width: cvw(450);
     }
   }
 }
