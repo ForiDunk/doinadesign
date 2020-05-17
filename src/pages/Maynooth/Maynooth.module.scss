@@ -1,0 +1,101 @@
+@import '../../variables.scss';
+.container {
+  padding: cvw(100) $padding;
+  background: linear-gradient(180deg, #1d4097 0.47%, #3a8ddb 100%);
+
+  .title {
+    font-weight: bold;
+    color: $orange-color;
+    position: relative;
+    z-index: 1;
+    font-size: cvw(32);
+  }
+
+  .text {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
+    font-size: cvw(24);
+    line-height: cvw(50);
+  }
+
+  img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: cvw(815);
+
+    & > div {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    img {
+      height: 100%;
+    }
+
+    .header {
+      font-size: cvw(36);
+      height: cvw(75);
+    }
+  }
+  .section2 {
+    & > div {
+      margin-top: cvw(40);
+    }
+
+    .colors {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .color {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: cvw(32);
+        line-height: cvw(60);
+        text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
+
+        & > div {
+          position: relative;
+          z-index: 1;
+        }
+
+        & > div:first-child {
+          height: cvw(100);
+          width: cvw(100);
+          border-radius: cvw(50);
+          margin-bottom: cvw(23);
+        }
+      }
+    }
+    .fonts {
+      color: #ffffff;
+      text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
+      font-size: cvw(24);
+      line-height: cvw(60);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > div {
+        & > div:first-child {
+          font-size: cvw(28);
+          margin-bottom: cvw(26);
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ import Projects from './Projects';
 import About from './About';
 import Others from './Others';
 import NavPill from '../../components/NavPill/NavPill';
+import Footer from '../../components/Footer/Footer';
 import { useState } from 'react';
 
 export default () => {
@@ -17,6 +18,9 @@ export default () => {
         <Projects setActive={setActive} />
         <About setActive={setActive} />
         <Others setActive={setActive} />
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </div>
     </>
   );

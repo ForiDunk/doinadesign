@@ -15,7 +15,8 @@
 }
 .projects,
 .about,
-.others {
+.others,
+.footer {
   padding: cvw(80) $padding;
 }
 .title {
@@ -28,6 +29,7 @@
   position: relative;
   z-index: 1;
   color: #ffffff;
+  text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
 }
 
 .projects,
@@ -43,11 +45,6 @@
   }
 }
 
-.about,
-.others {
-  border-top: cvw(8) dotted rgba(255, 255, 255, 0.5);
-}
-
 /***** HEADER *****/
 .header {
   font-weight: bold;
@@ -57,6 +54,7 @@
   align-items: center;
   text-align: center;
   background-color: $background-color2;
+  height: 100vh;
 
   .title {
     font-size: cvw(56);

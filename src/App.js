@@ -4,7 +4,6 @@ import Maynooth from './pages/Maynooth/Maynooth';
 import RoadBikes from './pages/RoadBikes/RoadBikes';
 import ChefRecipes from './pages/ChefRecipes/ChefRecipes';
 import Home from './pages/Home/Home';
-import Footer from './components/Footer/Footer';
 import Particles from 'react-particles-js';
 const particlesOptions = {
   particles: {
@@ -44,7 +43,6 @@ export default () => (
           <Home />
         </Route>
       </Switch>
-      <Footer />
     </Router>
   </>
 );
