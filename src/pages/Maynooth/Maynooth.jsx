@@ -1,6 +1,10 @@
 import React from 'react';
+import Magnifier from 'react-magnifier';
 import styles from './Maynooth.module.scss';
 import maynoothGif from '../../assets/images/maynooth/maynooth.gif';
+import wf1 from '../../assets/images/maynooth/wf1.png';
+import wf2 from '../../assets/images/maynooth/wf2.png';
+import wf3 from '../../assets/images/maynooth/wf3.png';
 import Footer from '../../components/Footer/Footer';
 
 const colors = ['#F3B541', '#842C68', '#FFFFFF', '#EDEDEF', '#3C3C3C'];
@@ -43,9 +47,9 @@ export default () => (
       </div>
       <div className={styles.title}>Wireframes:</div>
       <div className={styles.wireframes}>
-        <div>wf1</div>
-        <div>wf2</div>
-        <div>wf3</div>
+        <Magnifier src={wf1} zoomFactor={2} />
+        <Magnifier src={wf2} zoomFactor={2} />
+        <Magnifier src={wf3} zoomFactor={2} />
       </div>
       <div className={styles.title}>Colors:</div>
       <div className={styles.colors}>

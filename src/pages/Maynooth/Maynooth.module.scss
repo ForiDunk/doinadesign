@@ -53,6 +53,15 @@
       margin-top: cvw(40);
     }
 
+    .wireframes {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        width: cvw(445) !important;
+        align-self: flex-start !important;
+      }
+    }
+
     .colors {
       width: 100%;
       display: flex;
