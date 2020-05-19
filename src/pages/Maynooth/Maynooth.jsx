@@ -5,6 +5,14 @@ import maynoothGif from '../../assets/images/maynooth/maynooth.gif';
 import wf1 from '../../assets/images/maynooth/wf1.png';
 import wf2 from '../../assets/images/maynooth/wf2.png';
 import wf3 from '../../assets/images/maynooth/wf3.png';
+import p1 from '../../assets/images/maynooth/p1.png';
+import p2 from '../../assets/images/maynooth/p2.png';
+import p3 from '../../assets/images/maynooth/p3.png';
+import p4 from '../../assets/images/maynooth/p4.png';
+import p5 from '../../assets/images/maynooth/p5.png';
+import p6 from '../../assets/images/maynooth/p6.png';
+import p7 from '../../assets/images/maynooth/p7.png';
+import p8 from '../../assets/images/maynooth/p8.png';
 import Footer from '../../components/Footer/Footer';
 
 const colors = ['#F3B541', '#842C68', '#FFFFFF', '#EDEDEF', '#3C3C3C'];
@@ -88,7 +96,19 @@ export default () => (
         </div>
       </div>
       <div className={styles.title}>
-        High-fidelity Design (Web and Mobile versions):
+        High-fidelity Design <span>(Web and Mobile versions):</span>
+      </div>
+      <div className={styles.designs1}>
+        <Magnifier src={p1} zoomFactor={2} />
+        <Magnifier src={p2} zoomFactor={2} />
+        <Magnifier src={p3} zoomFactor={2} />
+      </div>
+      <div className={styles.designs2}>
+        <Magnifier src={p4} zoomFactor={2} />
+        <Magnifier src={p5} zoomFactor={2} />
+        <Magnifier src={p6} zoomFactor={2} />
+        <Magnifier src={p7} zoomFactor={2} />
+        <Magnifier src={p8} zoomFactor={2} />
       </div>
     </div>
     <Footer />

@@ -106,5 +106,28 @@
         }
       }
     }
+    .title span {
+      font-weight: normal;
+    }
+
+    .designs1 {
+      margin-top: cvw(60);
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        width: cvw(418) !important;
+        align-self: flex-start !important;
+      }
+    }
+    .designs2 {
+      margin-top: cvw(80);
+      margin-bottom: cvw(240);
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        width: cvw(240) !important;
+        align-self: flex-start !important;
+      }
+    }
   }
 }
