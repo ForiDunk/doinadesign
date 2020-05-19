@@ -1,0 +1,121 @@
+@import '../../variables.scss';
+.container {
+  padding: cvw(100) $padding;
+  background: linear-gradient(180deg, #1d4097 0.47%, #3a8ddb 100%);
+
+  .title {
+    font-weight: bold;
+    color: $orange-color;
+    position: relative;
+    z-index: 1;
+    font-size: cvw(32);
+  }
+
+  .text {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
+    font-size: cvw(24);
+    line-height: cvw(50);
+    margin: cvw(25) 0 cvw(50) 0;
+  }
+
+  .header {
+    font-size: cvw(36);
+  }
+
+  img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .gif {
+    width: cvw(897);
+    left: 50%;
+    transform: translateX(-50%);
+    margin: cvw(75) 0;
+  }
+
+  .wireframes {
+    display: flex;
+    justify-content: space-between;
+    margin: cvw(45) 0 cvw(80) 0;
+
+    & > div {
+      width: cvw(660) !important;
+    }
+    & > div:first-child {
+      align-self: flex-start !important;
+    }
+  }
+
+  .secondCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .colorsContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  .colors {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: cvw(38);
+    .color {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-size: cvw(32);
+      line-height: cvw(60);
+      text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
+
+      & > div {
+        position: relative;
+        z-index: 1;
+      }
+
+      & > div:first-child {
+        height: cvw(86);
+        width: cvw(86);
+        border-radius: cvw(43);
+      }
+    }
+  }
+
+  .fonts {
+    color: #ffffff;
+    text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
+    font-size: cvw(24);
+    line-height: cvw(60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: cvw(25) 0 cvw(50) 0;
+
+    & > div {
+      & > div:first-child {
+        font-size: cvw(28);
+        margin-bottom: cvw(26);
+      }
+    }
+  }
+
+  .designs {
+    display: flex;
+    justify-content: space-between;
+    margin: cvw(45) 0 cvw(100) 0;
+
+    & > div {
+      width: cvw(335) !important;
+      align-self: flex-start !important;
+    }
+  }
+}

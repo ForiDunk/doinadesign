@@ -26,7 +26,12 @@ export default ({ setActive }) => {
       <div className={styles.title}>PROJECTS</div>
 
       <div className={styles.project}>
-        <img className={styles.projectImg} src={maynooth} alt='Maynooth' />
+        <img
+          loading='lazy'
+          className={styles.projectImg}
+          src={maynooth}
+          alt='Maynooth'
+        />
         <div className={styles.projectMeta}>
           <div className={styles.title}>MAYNOOTH FURNITURE</div>
           <div className={styles.text}>
@@ -44,15 +49,20 @@ export default ({ setActive }) => {
             A conceptual e-commerce website selling contemporary bicycles
             exclusively from their own website.
           </div>
-          <Button onClick={() => history.push('/road-bikes')}>Show more</Button>
+          <Button onClick={() => history.push('/roar-bikes')}>Show more</Button>
         </div>
-        <img className={styles.projectImg} src={roadBikes} alt='Road Bikes' />
+        <img
+          loading='lazy'
+          className={styles.projectImg}
+          src={roadBikes}
+          alt='Road Bikes'
+        />
       </div>
 
       <div className={styles.project}>
         <div className={styles.projectImg}>
-          <img src={chefRecipe1} alt='Chef Recipe 1' />
-          <img src={chefRecipe2} alt='Chef Recipe 2' />
+          <img loading='lazy' src={chefRecipe1} alt='Chef Recipe 1' />
+          <img loading='lazy' src={chefRecipe2} alt='Chef Recipe 2' />
         </div>
         <div className={styles.projectMeta}>
           <div className={styles.title}>CHEF RECIPES</div>

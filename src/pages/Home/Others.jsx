@@ -31,6 +31,7 @@ export default ({ setActive }) => {
         {firstRow.map((item) => (
           <Tilt key={item.image}>
             <img
+              loading='lazy'
               className={styles.img}
               src={item.image}
               onClick={() => openTo(item.url)}
@@ -43,6 +44,7 @@ export default ({ setActive }) => {
         {secondRow.map((item) => (
           <Tilt key={item.image}>
             <img
+              loading='lazy'
               className={styles.img}
               src={item.image}
               onClick={() => openTo(item.url)}

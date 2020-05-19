@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Maynooth from './pages/Maynooth/Maynooth';
-import RoadBikes from './pages/RoadBikes/RoadBikes';
+import RoarBikes from './pages/RoarBikes/RoarBikes';
 import ChefRecipes from './pages/ChefRecipes/ChefRecipes';
 import Home from './pages/Home/Home';
 import Particles from 'react-particles-js';
@@ -33,8 +33,8 @@ export default () => (
         <Route path='/maynooth'>
           <Maynooth />
         </Route>
-        <Route path='/road-bikes'>
-          <RoadBikes />
+        <Route path='/roar-bikes'>
+          <RoarBikes />
         </Route>
         <Route path='/chef-recipes'>
           <ChefRecipes />
