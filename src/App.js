@@ -5,10 +5,11 @@ import RoarBikes from './pages/RoarBikes/RoarBikes';
 import ChefRecipes from './pages/ChefRecipes/ChefRecipes';
 import Home from './pages/Home/Home';
 import Particles from 'react-particles-js';
+
 const particlesOptions = {
   particles: {
     number: {
-      value: 200,
+      value: 150,
       density: {
         enable: true,
         value_are: 800,
