@@ -32,7 +32,7 @@ export default () => {
             </div>
             <div className={styles.text}>
               A conceptual design project created during the Udemy UX Design
-              course
+              course.
             </div>
             <div className={styles.title}>Client: </div>
             <div className={styles.text}>

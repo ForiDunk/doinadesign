@@ -14,8 +14,6 @@ export default ({ setActive }) => {
     observer.observe(document.querySelector('#about'));
   }, [setActive]);
 
-  console.log(avatarSrc);
-
   return (
     <div id='about' className={styles.about}>
       <div className={styles.title}>ABOUT ME</div>
