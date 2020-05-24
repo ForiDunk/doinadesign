@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Home.module.scss';
+import avatarSrc from '../../assets/images/avatar2.jpg';
 import { useEffect } from 'react';
 
 export default ({ setActive }) => {
@@ -12,6 +13,8 @@ export default ({ setActive }) => {
     );
     observer.observe(document.querySelector('#about'));
   }, [setActive]);
+
+  console.log(avatarSrc);
 
   return (
     <div id='about' className={styles.about}>
@@ -36,7 +39,7 @@ export default ({ setActive }) => {
             technology since childhood.
           </p>
         </div>
-        <div className={styles.avatar}></div>
+        <img className={styles.avatar} src={avatarSrc} alt='Avatar of me' />
       </div>
     </div>
   );
