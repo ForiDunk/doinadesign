@@ -205,8 +205,16 @@
       .projectImg {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         height: auto;
-        max-width: 76%;
+        max-width: 66%;
+        width: 100%;
+        justify-content: space-between;
+        img {
+          &:last-child {
+            margin-left: unset;
+          }
+        }
       }
 
       .projectMeta {
