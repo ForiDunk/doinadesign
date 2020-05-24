@@ -205,12 +205,12 @@
       .projectImg {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         height: auto;
         max-width: 66%;
-        width: 100%;
         justify-content: space-between;
-        img {
+        width: 100%;
+        & > img {
+          height: 55vw;
           &:last-child {
             margin-left: unset;
           }
