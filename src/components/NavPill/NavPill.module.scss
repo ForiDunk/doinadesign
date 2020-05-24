@@ -13,6 +13,10 @@
   right: cvw(104);
   justify-content: space-evenly;
   top: 25%;
+  @media screen and (max-width: $break-medium) {
+    right: cvw(10);
+    top: 15%;
+  }
 
   div {
     padding: cvw(12);

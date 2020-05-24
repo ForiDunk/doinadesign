@@ -27,4 +27,29 @@
       }
     }
   }
+
+  @media screen and (max-width: $break-medium) {
+    .text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: cvw(32);
+      line-height: cvw(56);
+      color: #ffffff;
+    }
+
+    .socials {
+      .social {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        margin-right: cvw(24);
+        height: cvw(60);
+        width: cvw(60);
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
 }

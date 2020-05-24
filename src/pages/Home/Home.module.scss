@@ -13,6 +13,9 @@
 .others,
 .footer {
   padding: cvw(80) $padding;
+  @media screen and (max-width: $break-medium) {
+    padding: cvw(40) $padding-medium;
+  }
 }
 .title {
   font-weight: bold;
@@ -33,10 +36,17 @@
   .title {
     font-size: cvw(36);
     margin-bottom: cvw(66);
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(64);
+    }
   }
   .text {
     font-size: cvw(24);
     line-height: cvw(50);
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(48);
+      line-height: cvw(60);
+    }
   }
 }
 
@@ -85,6 +95,32 @@
 
       &:last-child {
         margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width: $break-medium) {
+    height: unset;
+    padding: $padding-medium;
+
+    .title {
+      font-size: cvw(112);
+      margin-top: $padding-medium;
+    }
+    .text {
+      font-size: cvw(64);
+      line-height: cvw(78);
+      max-width: 76%;
+    }
+
+    .socials {
+      .social {
+        margin-right: cvw(97);
+        height: cvw(100);
+        width: cvw(100);
+
+        &:last-child {
+          margin: 0;
+        }
       }
     }
   }
@@ -156,6 +192,72 @@
       transform: translateX(cvw(88));
     }
   }
+
+  @media screen and (max-width: $break-medium) {
+    padding-top: $padding-medium;
+
+    .project {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+
+      .projectImg {
+        display: flex;
+        align-items: center;
+        height: auto;
+        max-width: 76%;
+      }
+
+      .projectMeta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: start;
+        padding-bottom: cvw(32);
+        width: 100%;
+        .title {
+          font-size: cvw(56);
+          margin: 0;
+        }
+        .text {
+          margin: cvw(20) 0;
+        }
+      }
+
+      &:last-child {
+        height: unset;
+        .projectMeta {
+          padding-bottom: 0;
+          margin-top: cvw(32);
+        }
+      }
+
+      &:nth-child(odd) {
+        margin: cvw(100) 0;
+        flex-direction: column-reverse;
+        .projectMeta {
+          align-items: flex-start;
+          text-align: start;
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      img.projectImg {
+        transform: unset;
+        z-index: 1;
+      }
+    }
+
+    & > div:nth-child(3) {
+      img.projectImg {
+        transform: unset;
+        z-index: 1;
+      }
+    }
+  }
 }
 
 /***** ABOUT ME *****/
@@ -184,6 +286,34 @@
       width: cvw(450);
     }
   }
+
+  @media screen and (max-width: $break-medium) {
+    .container {
+      display: inline-block;
+      .text {
+        width: unset;
+        p {
+          margin: 0;
+
+          &:first-child {
+            margin-bottom: cvw(40);
+          }
+        }
+      }
+
+      .avatar {
+        position: relative;
+        z-index: 1;
+        float: right;
+        background-clip: content-box;
+        shape-outside: ellipse();
+        border-radius: 50%;
+        height: cvw(600);
+        width: cvw(600);
+        margin: cvw(20) 0 cvw(20) cvw(20);
+      }
+    }
+  }
 }
 
 /***** OTHERS *****/
@@ -205,6 +335,20 @@
 
       &:hover {
         transform: scale(1.2);
+      }
+    }
+  }
+
+  @media screen and (max-width: $break-medium) {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: unset;
+      flex-wrap: wrap;
+
+      .img {
+        width: 22%;
+        margin-top: cvw(72);
       }
     }
   }

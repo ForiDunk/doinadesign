@@ -2,8 +2,10 @@ import React from 'react';
 import styles from './Home.module.scss';
 import avatarSrc from '../../assets/images/avatar.png';
 import { useEffect } from 'react';
+import { useState } from 'react';
 
 export default ({ setActive }) => {
+  const [isMedium, setIsMedium] = useState(window.innerWidth <= 768);
   useEffect(() => {
     var observer = new IntersectionObserver(
       function (entries) {
@@ -14,11 +16,19 @@ export default ({ setActive }) => {
     observer.observe(document.querySelector('#about'));
   }, [setActive]);
 
+  const checIfMedium = () => setIsMedium(window.innerWidth <= 768);
+
+  window.addEventListener('resize', checIfMedium);
+  window.addEventListener('orientationchange', checIfMedium);
+
   return (
     <div id='about' className={styles.about}>
       <div className={styles.title}>ABOUT ME</div>
       <div className={styles.container}>
         <div className={styles.text}>
+          {isMedium && (
+            <img className={styles.avatar} src={avatarSrc} alt='Avatar of me' />
+          )}
           <p>
             My name is Doina Lisneac-Forreiter, a 27 years old aspiring UI/UX
             Designer. I was always a very curious person, eager to learn a lot
@@ -37,7 +47,9 @@ export default ({ setActive }) => {
             technology since childhood.
           </p>
         </div>
-        <img className={styles.avatar} src={avatarSrc} alt='Avatar of me' />
+        {!isMedium && (
+          <img className={styles.avatar} src={avatarSrc} alt='Avatar of me' />
+        )}
       </div>
     </div>
   );

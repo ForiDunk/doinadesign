@@ -20,4 +20,10 @@
   &:active {
     background-color: darken($color: $orange-color, $amount: 15%);
   }
+
+  @media screen and (max-width: $break-medium) {
+    font-size: cvw(36);
+    width: unset;
+    padding: cvw(20) cvw(60);
+  }
 }
