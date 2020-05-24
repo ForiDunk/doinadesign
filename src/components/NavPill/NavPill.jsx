@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { ReactComponent as NavHome } from '../../assets/svgs/nav-home.svg';
 import { ReactComponent as NavProjects } from '../../assets/svgs/nav-projects.svg';
 import { ReactComponent as NavAbout } from '../../assets/svgs/nav-about.svg';
@@ -6,7 +7,19 @@ import { ReactComponent as NavOther } from '../../assets/svgs/nav-other.svg';
 import styles from './NavPill.module.scss';
 import { navTo } from '../../utils/navigation';
 
-export default ({ active }) => {
+export default ({ active, short = false }) => {
+  const history = useHistory();
+
+  if (short) {
+    return (
+      <div className={`${styles.navPill} ${styles.navPillShort}`}>
+        <div onClick={() => history.push('/')}>
+          <NavHome />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.navPill}>
       <div

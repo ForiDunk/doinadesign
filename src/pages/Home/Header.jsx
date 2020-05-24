@@ -20,6 +20,7 @@ export default ({ setActive }) => {
 
   return (
     <>
+      <div className={styles.bannerText}>PORTFOLIO</div>
       <div id='home' className={styles.header}>
         <div className={styles.title}>Hi, I’m Doina.</div>
         <div className={styles.text}>
