@@ -1,5 +1,4 @@
 import React from 'react';
-import Tilt from 'react-parallax-tilt';
 import styles from './Home.module.scss';
 import data from './othersData';
 import { openTo } from '../../utils/navigation';
@@ -29,28 +28,26 @@ export default ({ setActive }) => {
       </div>
       <div className={styles.row}>
         {firstRow.map((item) => (
-          <Tilt key={item.image}>
-            <img
-              loading='lazy'
-              className={styles.img}
-              src={item.image}
-              onClick={() => openTo(item.url)}
-              alt='Art'
-            />
-          </Tilt>
+          <img
+            key={item.image}
+            loading='lazy'
+            className={styles.img}
+            src={item.image}
+            onClick={() => openTo(item.url)}
+            alt='Art'
+          />
         ))}
       </div>
       <div className={styles.row}>
         {secondRow.map((item) => (
-          <Tilt key={item.image}>
-            <img
-              loading='lazy'
-              className={styles.img}
-              src={item.image}
-              onClick={() => openTo(item.url)}
-              alt='Art'
-            />
-          </Tilt>
+          <img
+            key={item.image}
+            loading='lazy'
+            className={styles.img}
+            src={item.image}
+            onClick={() => openTo(item.url)}
+            alt='Art'
+          />
         ))}
       </div>
     </div>

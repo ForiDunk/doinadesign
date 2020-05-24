@@ -199,6 +199,13 @@
       width: cvw(150);
       height: auto;
       cursor: pointer;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
