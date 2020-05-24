@@ -43,6 +43,9 @@ export default () => (
         <Route exact path='/'>
           <Home />
         </Route>
+        <Route>
+          <Home />
+        </Route>
       </Switch>
     </Router>
   </>
