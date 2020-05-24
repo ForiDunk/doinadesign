@@ -13,7 +13,7 @@ export default ({ active, short = false }) => {
   if (short) {
     return (
       <div className={`${styles.navPill} ${styles.navPillShort}`}>
-        <div onClick={() => history.push('/')}>
+        <div onClick={() => history.goBack()}>
           <NavHome />
         </div>
       </div>
