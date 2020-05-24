@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import avatarSrc from '../../assets/images/avatar2.jpg';
+import avatarSrc from '../../assets/images/avatar.png';
 import { useEffect } from 'react';
 
 export default ({ setActive }) => {
