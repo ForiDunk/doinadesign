@@ -19,13 +19,16 @@ export default ({ setActive }) => {
       { threshold: [0.1] }
     );
     observer.observe(document.querySelector('#projects'));
+    observer.observe(document.querySelectorAll('.project')[0]);
+    observer.observe(document.querySelectorAll('.project')[1]);
+    observer.observe(document.querySelectorAll('.project')[2]);
   }, [setActive]);
 
   return (
     <div id='projects' className={styles.projects}>
       <div className={styles.title}>PROJECTS</div>
 
-      <div className={styles.project}>
+      <div className={`${styles.project} project`}>
         <img
           loading='lazy'
           className={styles.projectImg}
@@ -42,7 +45,7 @@ export default ({ setActive }) => {
         </div>
       </div>
 
-      <div className={styles.project}>
+      <div className={`${styles.project} project`}>
         <div className={styles.projectMeta}>
           <div className={styles.title}>ROAR BIKES</div>
           <div className={styles.text}>
@@ -59,7 +62,7 @@ export default ({ setActive }) => {
         />
       </div>
 
-      <div className={styles.project}>
+      <div className={`${styles.project} project`}>
         <div className={styles.projectImg}>
           <img loading='lazy' src={chefRecipe1} alt='Chef Recipe 1' />
           <img loading='lazy' src={chefRecipe2} alt='Chef Recipe 2' />

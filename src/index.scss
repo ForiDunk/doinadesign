@@ -28,6 +28,10 @@ body {
   cursor: default;
 }
 
+#root {
+  overflow: hidden;
+}
+
 .particles {
   position: fixed;
   top: 0;
