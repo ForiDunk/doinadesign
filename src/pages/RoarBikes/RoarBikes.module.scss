@@ -2,6 +2,9 @@
 .container {
   padding: cvw(100) $padding;
   background: linear-gradient(180deg, #1d4097 0.47%, #3a8ddb 100%);
+  @media screen and (max-width: $break-medium) {
+    padding: $padding-medium;
+  }
 
   .title {
     font-weight: bold;
@@ -9,6 +12,9 @@
     position: relative;
     z-index: 1;
     font-size: cvw(32);
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(48);
+    }
   }
 
   .text {
@@ -19,10 +25,17 @@
     font-size: cvw(24);
     line-height: cvw(50);
     margin: cvw(25) 0 cvw(50) 0;
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(36);
+      line-height: cvw(60);
+    }
   }
 
   .header {
     font-size: cvw(36);
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(54);
+    }
   }
 
   img {
@@ -35,6 +48,9 @@
     left: 50%;
     transform: translateX(-50%);
     margin: cvw(75) 0;
+    @media screen and (max-width: $break-medium) {
+      width: 80%;
+    }
   }
 
   .wireframes {
@@ -44,6 +60,9 @@
 
     & > div {
       width: cvw(660) !important;
+      @media screen and (max-width: $break-medium) {
+        width: 48% !important;
+      }
     }
     & > div:first-child {
       align-self: flex-start !important;
@@ -99,11 +118,17 @@
     justify-content: space-between;
     align-items: center;
     margin: cvw(25) 0 cvw(50) 0;
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(36);
+    }
 
     & > div {
       & > div:first-child {
         font-size: cvw(28);
         margin-bottom: cvw(26);
+        @media screen and (max-width: $break-medium) {
+          font-size: cvw(42);
+        }
       }
     }
   }
@@ -112,10 +137,17 @@
     display: flex;
     justify-content: space-between;
     margin: cvw(45) 0 cvw(100) 0;
+    @media screen and (max-width: $break-medium) {
+      flex-wrap: wrap;
+    }
 
     & > div {
       width: cvw(335) !important;
       align-self: flex-start !important;
+      @media screen and (max-width: $break-medium) {
+        width: 48% !important;
+        margin-bottom: cvw(76.8);
+      }
     }
   }
 }
