@@ -3,6 +3,9 @@
 .container {
   padding: cvw(100) $padding;
   background: linear-gradient(180deg, #1d4097 0.47%, #3a8ddb 100%);
+  @media screen and (max-width: $break-medium) {
+    padding: $padding-medium;
+  }
 
   .title {
     font-weight: bold;
@@ -10,6 +13,10 @@
     position: relative;
     z-index: 1;
     font-size: cvw(32);
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(48);
+      margin-bottom: cvw(48);
+    }
   }
 
   .text {
@@ -20,10 +27,17 @@
     font-size: cvw(24);
     line-height: cvw(50);
     margin: cvw(25) 0 cvw(50) 0;
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(36);
+      line-height: cvw(60);
+    }
   }
 
   .header {
     font-size: cvw(36);
+    @media screen and (max-width: $break-medium) {
+      font-size: cvw(54);
+    }
   }
 
   img {
@@ -37,6 +51,9 @@
     align-items: center;
     height: cvw(887);
     margin-bottom: cvw(53);
+    @media screen and (max-width: $break-medium) {
+      height: cvw(1200);
+    }
 
     & > div {
       height: 100%;
@@ -44,6 +61,10 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      @media screen and (max-width: $break-medium) {
+        width: unset;
+        margin-right: cvw(20);
+      }
 
       & div:nth-child(3) {
         margin-bottom: cvw(25);
@@ -63,6 +84,11 @@
     .header {
       font-size: cvw(36);
       height: cvw(75);
+      @media screen and (max-width: $break-medium) {
+        font-size: cvw(54);
+        margin-bottom: cvw(100);
+        height: unset;
+      }
     }
   }
 
@@ -73,6 +99,9 @@
     height: cvw(1367);
     margin-top: cvw(53);
     margin-bottom: cvw(38);
+    @media screen and (max-width: $break-medium) {
+      height: unset;
+    }
 
     & > div:first-child {
       width: 100%;
@@ -84,6 +113,9 @@
         height: 100% !important;
         width: cvw(250) !important;
         align-self: flex-start;
+        @media screen and (max-width: $break-medium) {
+          width: cvw(368.64) !important;
+        }
       }
     }
     .leftSide {
@@ -98,9 +130,16 @@
         & > div {
           height: cvw(444.67) !important;
           width: cvw(250) !important;
+          @media screen and (max-width: $break-medium) {
+            width: 24% !important;
+            height: unset !important;
+          }
 
           &:last-child {
             width: cvw(252) !important;
+            @media screen and (max-width: $break-medium) {
+              width: 24% !important;
+            }
           }
         }
       }
@@ -145,12 +184,21 @@
           font-size: cvw(28);
           line-height: cvw(60);
           margin: cvw(25) 0 cvw(50) 0;
+          @media screen and (max-width: $break-medium) {
+            font-size: cvw(42);
+          }
           & > div {
             &:first-child {
               margin-bottom: cvw(26);
+              @media screen and (max-width: $break-medium) {
+                font-size: cvw(39);
+              }
             }
             & > div:first-child {
               font-size: cvw(24);
+              @media screen and (max-width: $break-medium) {
+                font-size: cvw(36);
+              }
             }
           }
         }
@@ -170,6 +218,9 @@
         margin: cvw(20) 0 0 cvw(28);
         width: cvw(310) !important;
         align-self: flex-start;
+        @media screen and (max-width: $break-medium) {
+          width: cvw(368.64) !important;
+        }
       }
     }
 
@@ -182,6 +233,11 @@
         height: cvw(551.39) !important;
         width: cvw(310) !important;
         margin: cvw(20);
+        @media screen and (max-width: $break-medium) {
+          width: 32% !important;
+          height: unset !important;
+          margin: cvw(20) 0 0 0;
+        }
       }
 
       & > div:first-child,
