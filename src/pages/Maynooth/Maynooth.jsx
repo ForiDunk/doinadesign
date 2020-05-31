@@ -1,17 +1,6 @@
 import React, { useEffect } from 'react';
 import Magnifier from 'react-magnifier';
 import styles from './Maynooth.module.scss';
-import wf1 from '../../assets/images/maynooth/wf1.png';
-import wf2 from '../../assets/images/maynooth/wf2.png';
-import wf3 from '../../assets/images/maynooth/wf3.png';
-import p1 from '../../assets/images/maynooth/p1.png';
-import p2 from '../../assets/images/maynooth/p2.png';
-import p3 from '../../assets/images/maynooth/p3.png';
-import p4 from '../../assets/images/maynooth/p4.png';
-import p5 from '../../assets/images/maynooth/p5.png';
-import p6 from '../../assets/images/maynooth/p6.png';
-import p7 from '../../assets/images/maynooth/p7.png';
-import p8 from '../../assets/images/maynooth/p8.png';
 import Footer from '../../components/Footer/Footer';
 import NavPill from '../../components/NavPill/NavPill';
 
@@ -62,9 +51,9 @@ export default () => {
           </div>
           <div className={styles.title}>Wireframes:</div>
           <div className={styles.wireframes}>
-            <Magnifier src={wf1} zoomFactor={2} />
-            <Magnifier src={wf2} zoomFactor={2} />
-            <Magnifier src={wf3} zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/wf1.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/wf2.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/wf3.png" zoomFactor={2} />
           </div>
           <div className={styles.colors}>
             <div className={styles.title}>Colors:</div>
@@ -106,16 +95,16 @@ export default () => {
             High-fidelity Design <span>(Web and Mobile versions):</span>
           </div>
           <div className={styles.designs1}>
-            <Magnifier src={p1} zoomFactor={2} />
-            <Magnifier src={p2} zoomFactor={2} />
-            <Magnifier src={p3} zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p1.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p2.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p3.png" zoomFactor={2} />
           </div>
           <div className={styles.designs2}>
-            <Magnifier src={p4} zoomFactor={2} />
-            <Magnifier src={p5} zoomFactor={2} />
-            <Magnifier src={p6} zoomFactor={2} />
-            <Magnifier src={p7} zoomFactor={2} />
-            <Magnifier src={p8} zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p4.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p5.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p6.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p7.png" zoomFactor={2} />
+            <Magnifier src="./assets/images/maynooth/p8.png" zoomFactor={2} />
           </div>
         </div>
         <Footer />

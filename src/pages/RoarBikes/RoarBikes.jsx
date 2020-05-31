@@ -1,12 +1,6 @@
 import React, { useEffect } from 'react';
 import Magnifier from 'react-magnifier';
 import styles from './RoarBikes.module.scss';
-import wf1 from '../../assets/images/roarbikes/wf1.png';
-import wf2 from '../../assets/images/roarbikes/wf2.png';
-import p1 from '../../assets/images/roarbikes/p1.png';
-import p2 from '../../assets/images/roarbikes/p2.png';
-import p3 from '../../assets/images/roarbikes/p3.png';
-import p4 from '../../assets/images/roarbikes/p4.png';
 import Footer from '../../components/Footer/Footer';
 import NavPill from '../../components/NavPill/NavPill';
 
@@ -54,9 +48,9 @@ export default () => {
 
         <div className={styles.title}>Wireframes: </div>
         <div className={styles.wireframes}>
-          <Magnifier src={wf1} zoomFactor={2} />
+          <Magnifier src="./assets/images/roarbikes/wf1.png" zoomFactor={2} />
           <div className={styles.secondCol}>
-            <Magnifier src={wf2} zoomFactor={2} />
+            <Magnifier src="./assets/images/roarbikes/wf2.png" zoomFactor={2} />
             <div className={styles.colorsContainer}>
               <div className={styles.title}>Colors:</div>
               <div className={styles.colors}>
@@ -101,10 +95,10 @@ export default () => {
 
         <div className={styles.title}>High-fidelity Design:</div>
         <div className={styles.designs}>
-          <Magnifier src={p1} zoomFactor={2} />
-          <Magnifier src={p2} zoomFactor={2} />
-          <Magnifier src={p3} zoomFactor={2} />
-          <Magnifier src={p4} zoomFactor={2} />
+          <Magnifier src="./assets/images/roarbikes/p1.png" zoomFactor={2} />
+          <Magnifier src="./assets/images/roarbikes/p2.png" zoomFactor={2} />
+          <Magnifier src="./assets/images/roarbikes/p3.png" zoomFactor={2} />
+          <Magnifier src="./assets/images/roarbikes/p4.png" zoomFactor={2} />
         </div>
         <Footer />
       </div>

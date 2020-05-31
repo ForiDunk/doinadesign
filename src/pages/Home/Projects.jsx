@@ -2,10 +2,6 @@ import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from './Home.module.scss';
 import Button from '../../components/Button/Button';
-import maynooth from '../../assets/images/maynooth.png';
-import roadBikes from '../../assets/images/road-bikes.png';
-import chefRecipe1 from '../../assets/images/chef-recipe1.png';
-import chefRecipe2 from '../../assets/images/chef-recipe2.png';
 
 export default ({ setActive }) => {
   const history = useHistory();
@@ -28,7 +24,11 @@ export default ({ setActive }) => {
       <div className={styles.title}>PROJECTS</div>
 
       <div className={`${styles.project} project`}>
-        <img className={styles.projectImg} src={maynooth} alt="Maynooth" />
+        <img
+          className={styles.projectImg}
+          src="./assets/images/maynooth.png"
+          alt="Maynooth"
+        />
         <div className={styles.projectMeta}>
           <div className={styles.title}>MAYNOOTH FURNITURE</div>
           <div className={styles.text}>
@@ -48,13 +48,17 @@ export default ({ setActive }) => {
           </div>
           <Button onClick={() => history.push('/roar-bikes')}>Show more</Button>
         </div>
-        <img className={styles.projectImg} src={roadBikes} alt="Road Bikes" />
+        <img
+          className={styles.projectImg}
+          src="./assets/images/road-bikes.png"
+          alt="Road Bikes"
+        />
       </div>
 
       <div className={`${styles.project} project`}>
         <div className={styles.projectImg}>
-          <img src={chefRecipe1} alt="Chef Recipe 1" />
-          <img src={chefRecipe2} alt="Chef Recipe 2" />
+          <img src="./assets/images/chef-recipe1.png" alt="Chef Recipe 1" />
+          <img src="./assets/images/chef-recipe2.png" alt="Chef Recipe 2" />
         </div>
         <div className={styles.projectMeta}>
           <div className={styles.title}>CHEF RECIPES</div>

@@ -27,22 +27,22 @@ export default ({ setActive }) => {
         are some of my works (please don’t judge too harsh):
       </div>
       <div className={styles.row}>
-        {firstRow.map((item) => (
+        {firstRow.map((item, i) => (
           <img
             key={item.image}
             className={styles.img}
-            src={item.image}
+            src={`./assets/images/others/${i + 1}.png`}
             onClick={() => openTo(item.url)}
             alt="Art"
           />
         ))}
       </div>
       <div className={styles.row}>
-        {secondRow.map((item) => (
+        {secondRow.map((item, i) => (
           <img
             key={item.image}
             className={styles.img}
-            src={item.image}
+            src={`./assets/images/others/${i + 9}.png`}
             onClick={() => openTo(item.url)}
             alt="Art"
           />
