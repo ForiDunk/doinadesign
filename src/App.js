@@ -13,7 +13,7 @@ const isPhone = md.phone() != null;
 const particlesOptions = {
   particles: {
     number: {
-      value: isPhone ? 50 : 150,
+      value: isPhone ? 50 : 120,
       density: {
         enable: true,
         value_are: 800,
@@ -32,19 +32,19 @@ const particlesOptions = {
 
 export default () => (
   <>
-    <Particles className='particles' params={particlesOptions} />
+    <Particles className="particles" params={particlesOptions} />
     <Router>
       <Switch>
-        <Route path='/maynooth'>
+        <Route path="/maynooth">
           <Maynooth />
         </Route>
-        <Route path='/roar-bikes'>
+        <Route path="/roar-bikes">
           <RoarBikes />
         </Route>
-        <Route path='/chef-recipes'>
+        <Route path="/chef-recipes">
           <ChefRecipes />
         </Route>
-        <Route exact path='/'>
+        <Route exact path="/">
           <Home />
         </Route>
         <Route>
