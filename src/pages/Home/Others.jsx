@@ -19,7 +19,7 @@ export default ({ setActive }) => {
   }, [setActive]);
 
   return (
-    <div id='others' className={styles.others}>
+    <div id="others" className={styles.others}>
       <div className={styles.title}>OTHER ARTSY HOBBIES</div>
       <div className={styles.text}>
         I have been always passionate about drawing and tattoos. In 2018 I’ve
@@ -30,11 +30,10 @@ export default ({ setActive }) => {
         {firstRow.map((item) => (
           <img
             key={item.image}
-            loading='lazy'
             className={styles.img}
             src={item.image}
             onClick={() => openTo(item.url)}
-            alt='Art'
+            alt="Art"
           />
         ))}
       </div>
@@ -42,11 +41,10 @@ export default ({ setActive }) => {
         {secondRow.map((item) => (
           <img
             key={item.image}
-            loading='lazy'
             className={styles.img}
             src={item.image}
             onClick={() => openTo(item.url)}
-            alt='Art'
+            alt="Art"
           />
         ))}
       </div>

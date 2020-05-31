@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Magnifier from 'react-magnifier';
 import styles from './Maynooth.module.scss';
-import maynoothGif from '../../assets/images/maynooth/maynooth.gif';
+// import maynoothGif from 'maynooth.gif';
 import wf1 from '../../assets/images/maynooth/wf1.png';
 import wf2 from '../../assets/images/maynooth/wf2.png';
 import wf3 from '../../assets/images/maynooth/wf3.png';
@@ -46,7 +46,7 @@ export default () => {
               website : Homepage, Category Page and a Product Page.
             </div>
           </div>
-          <img loading='eager' src={maynoothGif} alt='Maynooth' />
+          <img loading="eager" src="./maynooth.gif" alt="Maynooth" />
         </div>
         <div className={styles.section2}>
           <div className={styles.title}>Persona:</div>

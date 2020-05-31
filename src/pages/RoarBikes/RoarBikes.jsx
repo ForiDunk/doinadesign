@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Magnifier from 'react-magnifier';
 import styles from './RoarBikes.module.scss';
-import roarbikeGif from '../../assets/images/roarbikes/roarbikes.gif';
+// import roarbikeGif from 'roarbikes.gif';
 import wf1 from '../../assets/images/roarbikes/wf1.png';
 import wf2 from '../../assets/images/roarbikes/wf2.png';
 import p1 from '../../assets/images/roarbikes/p1.png';
@@ -23,9 +23,9 @@ export default () => {
 
         <img
           className={styles.gif}
-          loading='eager'
-          src={roarbikeGif}
-          alt='Roar Bike'
+          loading="eager"
+          src="./roarbikes.gif"
+          alt="Roar Bike"
         />
 
         <div className={styles.title}>Client: </div>

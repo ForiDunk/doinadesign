@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './ChefRecipes.module.scss';
 import Magnifier from 'react-magnifier';
-import chefRecipesGif from '../../assets/images/chefRecipes/chefRecipes.gif';
+// import chefRecipesGif from 'chefRecipes.gif';
 import wf1 from '../../assets/images/chefRecipes/wf1.png';
 import wf2 from '../../assets/images/chefRecipes/wf2.png';
 import wf3 from '../../assets/images/chefRecipes/wf3.png';
@@ -47,7 +47,7 @@ export default () => {
               personal blog on Instagram.
             </div>
           </div>
-          <img loading='eager' src={chefRecipesGif} alt='Chef Recipes gif' />
+          <img loading="eager" src="./chefRecipes.gif" alt="Chef Recipes gif" />
         </div>
 
         <div className={styles.title}>Wireframes:</div>
