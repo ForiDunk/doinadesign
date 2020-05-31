@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import avatarSrc from '../../assets/images/avatar.png';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
@@ -27,7 +26,11 @@ export default ({ setActive }) => {
       <div className={styles.container}>
         <div className={styles.text}>
           {isMedium && (
-            <img className={styles.avatar} src={avatarSrc} alt="Avatar of me" />
+            <img
+              className={styles.avatar}
+              src="./assets/images/avatar.png"
+              alt="Avatar of me"
+            />
           )}
           <p>
             My name is Doina Lisneac-Forreiter, a 27-year-old aspiring UI/UX
@@ -49,7 +52,11 @@ export default ({ setActive }) => {
           </p>
         </div>
         {!isMedium && (
-          <img className={styles.avatar} src={avatarSrc} alt="Avatar of me" />
+          <img
+            className={styles.avatar}
+            src="./assets/images/avatar.png"
+            alt="Avatar of me"
+          />
         )}
       </div>
     </div>

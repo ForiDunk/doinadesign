@@ -28,6 +28,7 @@ export default ({ setActive }) => {
           className={styles.projectImg}
           src="./assets/images/maynooth.png"
           alt="Maynooth"
+          onClick={() => history.push('/maynooth')}
         />
         <div className={styles.projectMeta}>
           <div className={styles.title}>MAYNOOTH FURNITURE</div>
@@ -52,11 +53,15 @@ export default ({ setActive }) => {
           className={styles.projectImg}
           src="./assets/images/road-bikes.png"
           alt="Road Bikes"
+          onClick={() => history.push('/roar-bikes')}
         />
       </div>
 
       <div className={`${styles.project} project`}>
-        <div className={styles.projectImg}>
+        <div
+          className={styles.projectImg}
+          onClick={() => history.push('/chef-recipes')}
+        >
           <img src="./assets/images/chef-recipe1.png" alt="Chef Recipe 1" />
           <img src="./assets/images/chef-recipe2.png" alt="Chef Recipe 2" />
         </div>
