@@ -54,7 +54,7 @@ export default ({ setActive }) => {
       <div className={`${styles.project} project`}>
         <div className={styles.projectImg}>
           <img src={chefRecipe1} alt="Chef Recipe 1" />
-          <img lsrc={chefRecipe2} alt="Chef Recipe 2" />
+          <img src={chefRecipe2} alt="Chef Recipe 2" />
         </div>
         <div className={styles.projectMeta}>
           <div className={styles.title}>CHEF RECIPES</div>

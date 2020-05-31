@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Magnifier from 'react-magnifier';
 import styles from './Maynooth.module.scss';
-// import maynoothGif from 'maynooth.gif';
 import wf1 from '../../assets/images/maynooth/wf1.png';
 import wf2 from '../../assets/images/maynooth/wf2.png';
 import wf3 from '../../assets/images/maynooth/wf3.png';

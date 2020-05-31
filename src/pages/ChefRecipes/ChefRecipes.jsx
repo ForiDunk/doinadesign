@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './ChefRecipes.module.scss';
 import Magnifier from 'react-magnifier';
-// import chefRecipesGif from 'chefRecipes.gif';
 import wf1 from '../../assets/images/chefRecipes/wf1.png';
 import wf2 from '../../assets/images/chefRecipes/wf2.png';
 import wf3 from '../../assets/images/chefRecipes/wf3.png';

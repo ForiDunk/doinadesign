@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Magnifier from 'react-magnifier';
 import styles from './RoarBikes.module.scss';
-// import roarbikeGif from 'roarbikes.gif';
 import wf1 from '../../assets/images/roarbikes/wf1.png';
 import wf2 from '../../assets/images/roarbikes/wf2.png';
 import p1 from '../../assets/images/roarbikes/p1.png';
