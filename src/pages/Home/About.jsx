@@ -27,6 +27,7 @@ export default ({ setActive }) => {
         <div className={styles.text}>
           {isMedium && (
             <img
+              loading="lazy"
               className={styles.avatar}
               src="./assets/images/avatar.png"
               alt="Avatar of me"
@@ -53,6 +54,7 @@ export default ({ setActive }) => {
         </div>
         {!isMedium && (
           <img
+            loading="lazy"
             className={styles.avatar}
             src="./assets/images/avatar.png"
             alt="Avatar of me"

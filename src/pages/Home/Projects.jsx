@@ -25,6 +25,7 @@ export default ({ setActive }) => {
 
       <div className={`${styles.project} project`}>
         <img
+          loading="lazy"
           className={styles.projectImg}
           src="./assets/images/maynooth.png"
           alt="Maynooth"
@@ -50,6 +51,7 @@ export default ({ setActive }) => {
           <Button onClick={() => history.push('/roar-bikes')}>Show more</Button>
         </div>
         <img
+          loading="lazy"
           className={styles.projectImg}
           src="./assets/images/road-bikes.png"
           alt="Road Bikes"
@@ -62,8 +64,16 @@ export default ({ setActive }) => {
           className={styles.projectImg}
           onClick={() => history.push('/chef-recipes')}
         >
-          <img src="./assets/images/chef-recipe1.png" alt="Chef Recipe 1" />
-          <img src="./assets/images/chef-recipe2.png" alt="Chef Recipe 2" />
+          <img
+            loading="lazy"
+            src="./assets/images/chef-recipe1.png"
+            alt="Chef Recipe 1"
+          />
+          <img
+            loading="lazy"
+            src="./assets/images/chef-recipe2.png"
+            alt="Chef Recipe 2"
+          />
         </div>
         <div className={styles.projectMeta}>
           <div className={styles.title}>CHEF RECIPES</div>

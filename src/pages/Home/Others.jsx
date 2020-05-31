@@ -29,6 +29,7 @@ export default ({ setActive }) => {
       <div className={styles.row}>
         {firstRow.map((item, i) => (
           <img
+            loading="lazy"
             key={item.image}
             className={styles.img}
             src={`./assets/images/others/${i + 1}.png`}
@@ -40,6 +41,7 @@ export default ({ setActive }) => {
       <div className={styles.row}>
         {secondRow.map((item, i) => (
           <img
+            loading="lazy"
             key={item.image}
             className={styles.img}
             src={`./assets/images/others/${i + 9}.png`}
