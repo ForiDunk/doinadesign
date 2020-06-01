@@ -21,16 +21,16 @@ export default ({ setActive }) => {
   window.addEventListener('orientationchange', checIfMedium);
 
   return (
-    <div id="about" className={styles.about}>
+    <div id='about' className={styles.about}>
       <div className={styles.title}>ABOUT ME</div>
       <div className={styles.container}>
         <div className={styles.text}>
           {isMedium && (
             <img
-              loading="lazy"
+              loading='lazy'
               className={styles.avatar}
-              src="./assets/images/avatar.png"
-              alt="Avatar of me"
+              src='./assets/images/avatar.png'
+              alt='Avatar of me'
             />
           )}
           <p>
@@ -38,9 +38,9 @@ export default ({ setActive }) => {
             Designer. I was always a very curious person, eager to learn a lot
             and try new things. I’ve worked as an Aesthetician for almost 2
             years, in Accounting and Customer Support fields for 2.5 years, but
-            I was unhappy about my career. As my moto is: “If you don’t like it,
-            change it”, I’ve decided to open a new door in my life and started
-            learning web design.
+            I was unhappy about my career. As my motto is: “If you don’t like
+            it, change it”, I’ve decided to open a new door in my life and
+            started learning web design.
           </p>
           <p>
             Why did I choose this particular profession? First of all, I have
@@ -54,10 +54,10 @@ export default ({ setActive }) => {
         </div>
         {!isMedium && (
           <img
-            loading="lazy"
+            loading='lazy'
             className={styles.avatar}
-            src="./assets/images/avatar.png"
-            alt="Avatar of me"
+            src='./assets/images/avatar.png'
+            alt='Avatar of me'
           />
         )}
       </div>
