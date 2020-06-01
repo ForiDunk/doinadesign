@@ -127,7 +127,6 @@
         align-items: center;
         width: 100%;
         justify-content: center;
-        margin-bottom: $padding-medium;
       }
       & > div {
         width: cvw(445) !important;
@@ -142,6 +141,7 @@
         @media screen and (max-width: $break-small) {
           width: 100% !important;
           align-self: center;
+          margin-bottom: $padding-medium;
         }
       }
     }

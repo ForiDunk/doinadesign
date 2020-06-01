@@ -3,6 +3,7 @@ import Magnifier from 'react-magnifier';
 import styles from './RoarBikes.module.scss';
 import Footer from '../../components/Footer/Footer';
 import NavPill from '../../components/NavPill/NavPill';
+import { isPhone } from '../../utils/device';
 
 const colors = ['#000000', '#BF3333', '#FFFFFF'];
 
@@ -16,9 +17,9 @@ export default () => {
 
         <img
           className={styles.gif}
-          loading="eager"
-          src="./roarbikes.gif"
-          alt="Roar Bike"
+          loading='eager'
+          src='./roarbikes.gif'
+          alt='Roar Bike'
         />
 
         <div className={styles.title}>Client: </div>
@@ -48,9 +49,24 @@ export default () => {
 
         <div className={styles.title}>Wireframes: </div>
         <div className={styles.wireframes}>
-          <Magnifier src="./assets/images/roarbikes/wf1.png" zoomFactor={2} />
+          {isPhone ? (
+            <div>
+              <img src='./assets/images/roarbikes/wf1.png' alt='wireframe' />
+            </div>
+          ) : (
+            <Magnifier src='./assets/images/roarbikes/wf1.png' zoomFactor={2} />
+          )}
           <div className={styles.secondCol}>
-            <Magnifier src="./assets/images/roarbikes/wf2.png" zoomFactor={2} />
+            {isPhone ? (
+              <div>
+                <img src='./assets/images/roarbikes/wf2.png' alt='wireframe' />
+              </div>
+            ) : (
+              <Magnifier
+                src='./assets/images/roarbikes/wf2.png'
+                zoomFactor={2}
+              />
+            )}
             <div className={styles.colorsContainer}>
               <div className={styles.title}>Colors:</div>
               <div className={styles.colors}>
@@ -94,12 +110,41 @@ export default () => {
         </div>
 
         <div className={styles.title}>High-fidelity Design:</div>
-        <div className={styles.designs}>
-          <Magnifier src="./assets/images/roarbikes/p1.png" zoomFactor={2} />
-          <Magnifier src="./assets/images/roarbikes/p2.png" zoomFactor={2} />
-          <Magnifier src="./assets/images/roarbikes/p3.png" zoomFactor={2} />
-          <Magnifier src="./assets/images/roarbikes/p4.png" zoomFactor={2} />
-        </div>
+        {isPhone ? (
+          <div className={styles.designs}>
+            <div>
+              <img
+                src='./assets/images/roarbikes/p1.png'
+                alt='high fidelity design'
+              />
+            </div>
+            <div>
+              <img
+                src='./assets/images/roarbikes/p2.png'
+                alt='high fidelity design'
+              />
+            </div>
+            <div>
+              <img
+                src='./assets/images/roarbikes/p3.png'
+                alt='high fidelity design'
+              />
+            </div>
+            <div>
+              <img
+                src='./assets/images/roarbikes/p4.png'
+                alt='high fidelity design'
+              />
+            </div>
+          </div>
+        ) : (
+          <div className={styles.designs}>
+            <Magnifier src='./assets/images/roarbikes/p1.png' zoomFactor={2} />
+            <Magnifier src='./assets/images/roarbikes/p2.png' zoomFactor={2} />
+            <Magnifier src='./assets/images/roarbikes/p3.png' zoomFactor={2} />
+            <Magnifier src='./assets/images/roarbikes/p4.png' zoomFactor={2} />
+          </div>
+        )}
         <Footer />
       </div>
     </>

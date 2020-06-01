@@ -5,6 +5,9 @@
   @media screen and (max-width: $break-medium) {
     padding: $padding-medium;
   }
+  @media screen and (max-width: $break-small) {
+    text-align: center;
+  }
 
   .title {
     font-weight: bold;
@@ -14,6 +17,12 @@
     font-size: cvw(32);
     @media screen and (max-width: $break-medium) {
       font-size: cvw(48);
+    }
+    @media screen and (max-width: $break-small) {
+      font-size: cvw(108);
+      &:not(.header) {
+        margin-bottom: cvw(108);
+      }
     }
   }
 
@@ -29,12 +38,20 @@
       font-size: cvw(36);
       line-height: cvw(60);
     }
+    @media screen and (max-width: $break-small) {
+      font-size: cvw(80);
+      line-height: cvw(110);
+      margin-bottom: $padding-medium;
+    }
   }
 
   .header {
     font-size: cvw(36);
     @media screen and (max-width: $break-medium) {
       font-size: cvw(54);
+    }
+    @media screen and (max-width: $break-small) {
+      font-size: cvw(108);
     }
   }
 
@@ -51,17 +68,32 @@
     @media screen and (max-width: $break-medium) {
       width: 80%;
     }
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
   }
 
   .wireframes {
     display: flex;
     justify-content: space-between;
     margin: cvw(45) 0 cvw(80) 0;
+    @media screen and (max-width: $break-small) {
+      flex-direction: column;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
 
     & > div {
       width: cvw(660) !important;
       @media screen and (max-width: $break-medium) {
         width: 48% !important;
+      }
+      @media screen and (max-width: $break-small) {
+        margin-bottom: $padding-medium;
+        width: 100% !important;
       }
     }
     & > div:first-child {
@@ -79,6 +111,9 @@
     flex-direction: column;
     height: 100%;
     justify-content: center;
+    @media screen and (max-width: $break-small) {
+      margin-top: $padding-medium;
+    }
   }
   .colors {
     width: 100%;
@@ -86,6 +121,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: cvw(38);
+    @media screen and (max-width: $break-small) {
+      justify-content: center;
+    }
     .color {
       display: flex;
       flex-direction: column;
@@ -95,6 +133,13 @@
       font-size: cvw(32);
       line-height: cvw(60);
       text-shadow: cvw(1) cvw(1) cvw(1) rgba(0, 0, 0, 0.7);
+      @media screen and (max-width: $break-small) {
+        font-size: cvw(60);
+        line-height: cvw(60);
+        &:not(:last-child) {
+          margin-right: cvw(100);
+        }
+      }
 
       & > div {
         position: relative;
@@ -104,7 +149,12 @@
       & > div:first-child {
         height: cvw(86);
         width: cvw(86);
-        border-radius: cvw(43);
+        border-radius: 50%;
+        @media screen and (max-width: $break-small) {
+          height: cvw(200);
+          width: cvw(200);
+          margin-bottom: cvw(50);
+        }
       }
     }
   }
@@ -121,6 +171,14 @@
     @media screen and (max-width: $break-medium) {
       font-size: cvw(36);
     }
+    @media screen and (max-width: $break-small) {
+      flex-direction: column;
+      font-size: cvw(72);
+      line-height: cvw(100);
+      & > div {
+        margin-bottom: $padding-medium;
+      }
+    }
 
     & > div {
       & > div:first-child {
@@ -128,6 +186,11 @@
         margin-bottom: cvw(26);
         @media screen and (max-width: $break-medium) {
           font-size: cvw(42);
+        }
+        @media screen and (max-width: $break-small) {
+          font-size: cvw(100);
+          line-height: cvw(110);
+          margin-bottom: unset;
         }
       }
     }
@@ -137,8 +200,15 @@
     display: flex;
     justify-content: space-between;
     margin: cvw(45) 0 cvw(100) 0;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
     @media screen and (max-width: $break-medium) {
       flex-wrap: wrap;
+    }
+    @media screen and (max-width: $break-small) {
+      margin-top: $padding-medium;
     }
 
     & > div {
@@ -147,6 +217,10 @@
       @media screen and (max-width: $break-medium) {
         width: 48% !important;
         margin-bottom: cvw(76.8);
+      }
+      @media screen and (max-width: $break-small) {
+        width: 100% !important;
+        margin-bottom: $padding-medium;
       }
     }
   }
