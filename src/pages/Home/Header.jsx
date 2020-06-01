@@ -21,7 +21,13 @@ export default ({ setActive }) => {
   return (
     <>
       <div className={styles.bannerText}>PORTFOLIO</div>
-      <div id='home' className={styles.header}>
+      <div
+        id='home'
+        className={styles.header}
+        style={{
+          height: window.innerWidth <= window.innerHeight ? 'unset' : '100vh',
+        }}
+      >
         <div className={styles.title}>Hi, I’m Doina.</div>
         <div className={styles.text}>
           I’m an aspiring UX/UI Designer based in Brasov, Romania.
