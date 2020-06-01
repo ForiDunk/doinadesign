@@ -171,6 +171,7 @@
         @media screen and (max-width: $break-small) {
           font-size: cvw(60);
           line-height: cvw(60);
+          margin-bottom: $padding-medium;
         }
 
         & > div {
@@ -189,9 +190,6 @@
             border-radius: cvw(100);
             margin-bottom: cvw(23);
           }
-        }
-        @media screen and (max-width: $break-small) {
-          margin-bottom: $padding-medium;
         }
       }
     }

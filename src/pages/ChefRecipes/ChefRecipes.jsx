@@ -3,6 +3,7 @@ import styles from './ChefRecipes.module.scss';
 import Magnifier from 'react-magnifier';
 import NavPill from '../../components/NavPill/NavPill';
 import Footer from '../../components/Footer/Footer';
+import { isPhone } from '../../utils/device';
 
 const colors = ['#F17B24', '#F3C41C', '#FFFFFF', '#181441', '#C4C4C4'];
 
@@ -15,9 +16,11 @@ export default () => {
       <div className={styles.container}>
         <div className={styles.section1}>
           <div>
-            <div className={`${styles.title} ${styles.header}`}>
-              CHEF RECIPES
-            </div>
+            {!isPhone && (
+              <div className={`${styles.title} ${styles.header}`}>
+                CHEF RECIPES
+              </div>
+            )}
             <div className={styles.title}>Primary objectives:</div>
             <div className={styles.text}>
               To build an app which will make cooking more fun and entertaining.
@@ -35,29 +38,63 @@ export default () => {
             </div>
           </div>
           <img loading='eager' src='./chefRecipes.gif' alt='Chef Recipes gif' />
+          {isPhone && (
+            <div className={`${styles.title} ${styles.header}`}>
+              CHEF RECIPES
+            </div>
+          )}
         </div>
 
         <div className={styles.title}>Wireframes:</div>
         <div className={styles.section2}>
           <div className={styles.leftSide}>
-            <div className={styles.wireframes}>
-              <Magnifier
-                src='./assets/images/chefRecipes/wf1.png'
-                zoomFactor={2}
-              />
-              <Magnifier
-                src='./assets/images/chefRecipes/wf2.png'
-                zoomFactor={2}
-              />
-              <Magnifier
-                src='./assets/images/chefRecipes/wf3.png'
-                zoomFactor={2}
-              />
-              <Magnifier
-                src='./assets/images/chefRecipes/wf4.png'
-                zoomFactor={2}
-              />
-            </div>
+            {isPhone ? (
+              <div className={styles.wireframes}>
+                <div>
+                  <img
+                    src='./assets/images/chefRecipes/wf1.png'
+                    alt='wireframe'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/chefRecipes/wf2.png'
+                    alt='wireframe'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/chefRecipes/wf3.png'
+                    alt='wireframe'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/chefRecipes/wf4.png'
+                    alt='wireframe'
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className={styles.wireframes}>
+                <Magnifier
+                  src='./assets/images/chefRecipes/wf1.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/chefRecipes/wf2.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/chefRecipes/wf3.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/chefRecipes/wf4.png'
+                  zoomFactor={2}
+                />
+              </div>
+            )}
             <div className={styles.colorsContainer}>
               <div className={styles.title}>Colors:</div>
               <div className={styles.colors}>
@@ -69,63 +106,141 @@ export default () => {
                 ))}
               </div>
             </div>
-            <div className={styles.fonts}>
-              <div className={styles.title}>Fonts:</div>
-              <div style={{ fontFamily: "'AvenirMedium', sans-serif" }}>
-                <div>
-                  <strong>Avenir</strong>
-                </div>
-                <div>
+            {!isPhone && (
+              <div className={styles.fonts}>
+                <div className={styles.title}>Fonts:</div>
+                <div style={{ fontFamily: "'AvenirMedium', sans-serif" }}>
                   <div>
-                    <strong>ABCDEFGHIJKLMNOPQRSTUWXYZ</strong>
+                    <strong>Avenir</strong>
                   </div>
-                  <div>abcdefghijklmnopqrstuwxyz</div>
-                  <div>1234567890</div>
+                  <div>
+                    <div>
+                      <strong>ABCDEFGHIJKLMNOPQRSTUWXYZ</strong>
+                    </div>
+                    <div>abcdefghijklmnopqrstuwxyz</div>
+                    <div>1234567890</div>
+                  </div>
                 </div>
+              </div>
+            )}
+          </div>
+          <div className={styles.rightSide}>
+            {isPhone ? (
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/wf5.png'
+                  alt='wireframe'
+                />
+              </div>
+            ) : (
+              <Magnifier
+                src='./assets/images/chefRecipes/wf5.png'
+                zoomFactor={2}
+              />
+            )}
+          </div>
+        </div>
+        {isPhone && (
+          <div className={styles.fonts}>
+            <div className={styles.title}>Fonts:</div>
+            <div style={{ fontFamily: "'AvenirMedium', sans-serif" }}>
+              <div>
+                <strong>Avenir</strong>
+              </div>
+              <div>
+                <div>
+                  <strong>ABCDEFGHIJKLMNOPQRSTUWXYZ</strong>
+                </div>
+                <div>abcdefghijklmnopqrstuwxyz</div>
+                <div>1234567890</div>
               </div>
             </div>
           </div>
-          <div className={styles.rightSide}>
-            <Magnifier
-              src='./assets/images/chefRecipes/wf5.png'
-              zoomFactor={2}
-            />
-          </div>
-        </div>
+        )}
 
         <div className={styles.title}>High-fidelity Design:</div>
         <div className={styles.section3}>
-          <div className={styles.leftSide}>
-            <Magnifier
-              src='./assets/images/chefRecipes/p1.png'
-              zoomFactor={2}
-            />
-            <Magnifier
-              src='./assets/images/chefRecipes/p2.png'
-              zoomFactor={2}
-            />
-            <Magnifier
-              src='./assets/images/chefRecipes/p3.png'
-              zoomFactor={2}
-            />
-            <Magnifier
-              src='./assets/images/chefRecipes/p5.png'
-              zoomFactor={2}
-            />
-            <Magnifier
-              src='./assets/images/chefRecipes/p6.png'
-              zoomFactor={2}
-            />
-            <Magnifier
-              src='./assets/images/chefRecipes/p7.png'
-              zoomFactor={2}
-            />
-          </div>
+          {isPhone ? (
+            <div className={styles.leftSide}>
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/p1.png'
+                  alt='high fidelity design'
+                />
+              </div>
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/p2.png'
+                  alt='high fidelity design'
+                />
+              </div>
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/p3.png'
+                  alt='high fidelity design'
+                />
+              </div>
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/p5.png'
+                  alt='high fidelity design'
+                />
+              </div>
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/p6.png'
+                  alt='high fidelity design'
+                />
+              </div>
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/p7.png'
+                  alt='high fidelity design'
+                />
+              </div>
+            </div>
+          ) : (
+            <div className={styles.leftSide}>
+              <Magnifier
+                src='./assets/images/chefRecipes/p1.png'
+                zoomFactor={2}
+              />
+              <Magnifier
+                src='./assets/images/chefRecipes/p2.png'
+                zoomFactor={2}
+              />
+              <Magnifier
+                src='./assets/images/chefRecipes/p3.png'
+                zoomFactor={2}
+              />
+              <Magnifier
+                src='./assets/images/chefRecipes/p5.png'
+                zoomFactor={2}
+              />
+              <Magnifier
+                src='./assets/images/chefRecipes/p6.png'
+                zoomFactor={2}
+              />
+              <Magnifier
+                src='./assets/images/chefRecipes/p7.png'
+                zoomFactor={2}
+              />
+            </div>
+          )}
           <div className={styles.rightSide}>
-            <Magnifier
-              src='./assets/images/chefRecipes/p4.png'
-              zoomFactor={2}
-            />
+            {isPhone ? (
+              <div>
+                <img
+                  src='./assets/images/chefRecipes/p4.png'
+                  alt='high fidelity design'
+                />
+              </div>
+            ) : (
+              <Magnifier
+                src='./assets/images/chefRecipes/p4.png'
+                zoomFactor={2}
+              />
+            )}
           </div>
         </div>
 
