@@ -34,7 +34,7 @@ export default () => {
               personal blog on Instagram.
             </div>
           </div>
-          <img loading="eager" src="./chefRecipes.gif" alt="Chef Recipes gif" />
+          <img loading='eager' src='./chefRecipes.gif' alt='Chef Recipes gif' />
         </div>
 
         <div className={styles.title}>Wireframes:</div>
@@ -42,19 +42,19 @@ export default () => {
           <div className={styles.leftSide}>
             <div className={styles.wireframes}>
               <Magnifier
-                src="./assets/images/chefRecipes/wf1.png"
+                src='./assets/images/chefRecipes/wf1.png'
                 zoomFactor={2}
               />
               <Magnifier
-                src="./assets/images/chefRecipes/wf2.png"
+                src='./assets/images/chefRecipes/wf2.png'
                 zoomFactor={2}
               />
               <Magnifier
-                src="./assets/images/chefRecipes/wf3.png"
+                src='./assets/images/chefRecipes/wf3.png'
                 zoomFactor={2}
               />
               <Magnifier
-                src="./assets/images/chefRecipes/wf4.png"
+                src='./assets/images/chefRecipes/wf4.png'
                 zoomFactor={2}
               />
             </div>
@@ -87,7 +87,7 @@ export default () => {
           </div>
           <div className={styles.rightSide}>
             <Magnifier
-              src="./assets/images/chefRecipes/wf4.png"
+              src='./assets/images/chefRecipes/wf5.png'
               zoomFactor={2}
             />
           </div>
@@ -97,33 +97,33 @@ export default () => {
         <div className={styles.section3}>
           <div className={styles.leftSide}>
             <Magnifier
-              src="./assets/images/chefRecipes/p1.png"
+              src='./assets/images/chefRecipes/p1.png'
               zoomFactor={2}
             />
             <Magnifier
-              src="./assets/images/chefRecipes/p2.png"
+              src='./assets/images/chefRecipes/p2.png'
               zoomFactor={2}
             />
             <Magnifier
-              src="./assets/images/chefRecipes/p3.png"
+              src='./assets/images/chefRecipes/p3.png'
               zoomFactor={2}
             />
             <Magnifier
-              src="./assets/images/chefRecipes/p5.png"
+              src='./assets/images/chefRecipes/p5.png'
               zoomFactor={2}
             />
             <Magnifier
-              src="./assets/images/chefRecipes/p6.png"
+              src='./assets/images/chefRecipes/p6.png'
               zoomFactor={2}
             />
             <Magnifier
-              src="./assets/images/chefRecipes/p7.png"
+              src='./assets/images/chefRecipes/p7.png'
               zoomFactor={2}
             />
           </div>
           <div className={styles.rightSide}>
             <Magnifier
-              src="./assets/images/chefRecipes/p4.png"
+              src='./assets/images/chefRecipes/p4.png'
               zoomFactor={2}
             />
           </div>
