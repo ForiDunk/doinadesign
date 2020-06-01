@@ -17,6 +17,12 @@
     right: cvw(10);
     top: 15%;
   }
+  @media screen and (max-width: $break-small) {
+    right: cvw(20);
+    width: cvw(160);
+    height: cvw(720);
+    border-radius: cvw(80);
+  }
 
   div {
     padding: cvw(12);
@@ -29,19 +35,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: $break-small) {
+      border-radius: cvw(64);
+      width: cvw(128);
+      height: cvw(128);
+    }
 
     &:hover,
     &.active {
       background-color: #f09b1c;
+      @media screen and (max-width: $break-small) {
+        background-color: unset;
+      }
     }
   }
 
   svg {
     height: cvw(40);
     width: cvw(40);
+    @media screen and (max-width: $break-small) {
+      height: cvw(80);
+      width: cvw(80);
+    }
   }
 }
 .navPillShort {
   height: cvw(80);
   top: cvw(100);
+  @media screen and (max-width: $break-small) {
+    height: cvw(160);
+  }
 }
