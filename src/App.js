@@ -5,10 +5,7 @@ import RoarBikes from './pages/RoarBikes/RoarBikes';
 import ChefRecipes from './pages/ChefRecipes/ChefRecipes';
 import Home from './pages/Home/Home';
 import Particles from 'react-particles-js';
-import MobileDetect from 'mobile-detect';
-
-const md = new MobileDetect(window.navigator.userAgent);
-const isPhone = md.phone() != null;
+import { isPhone } from './utils/device';
 
 const particlesOptions = {
   particles: {
