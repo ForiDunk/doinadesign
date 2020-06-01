@@ -3,6 +3,7 @@ import Magnifier from 'react-magnifier';
 import styles from './Maynooth.module.scss';
 import Footer from '../../components/Footer/Footer';
 import NavPill from '../../components/NavPill/NavPill';
+import { isPhone } from '../../utils/device';
 
 const colors = ['#F3B541', '#842C68', '#FFFFFF', '#EDEDEF', '#3C3C3C'];
 
@@ -15,9 +16,11 @@ export default () => {
       <div className={styles.container}>
         <div className={styles.section1}>
           <div>
-            <div className={`${styles.title} ${styles.header}`}>
-              MAYNOOTH FURNITURE
-            </div>
+            {!isPhone && (
+              <div className={`${styles.title} ${styles.header}`}>
+                MAYNOOTH FURNITURE
+              </div>
+            )}
             <div className={styles.text}>
               A conceptual design project created during the Udemy UX Design
               course.
@@ -34,7 +37,12 @@ export default () => {
               website : Homepage, Category Page and a Product Page.
             </div>
           </div>
-          <img loading="eager" src="./maynooth.gif" alt="Maynooth" />
+          <img loading='eager' src='./maynooth.gif' alt='Maynooth' />
+          {isPhone && (
+            <div className={`${styles.title} ${styles.header}`}>
+              MAYNOOTH FURNITURE
+            </div>
+          )}
         </div>
         <div className={styles.section2}>
           <div className={styles.title}>Persona:</div>
@@ -50,20 +58,57 @@ export default () => {
             her individual style.
           </div>
           <div className={styles.title}>Wireframes:</div>
-          <div className={styles.wireframes}>
-            <Magnifier src="./assets/images/maynooth/wf1.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/wf2.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/wf3.png" zoomFactor={2} />
-          </div>
-          <div className={styles.colors}>
-            <div className={styles.title}>Colors:</div>
-            {colors.map((color) => (
-              <div key={color} className={styles.color}>
-                <div style={{ backgroundColor: color }}></div>
-                <div>{color}</div>
+          {isPhone ? (
+            <div className={styles.wireframes}>
+              <div>
+                <img src='./assets/images/maynooth/wf1.png' alt='wireframe' />
               </div>
-            ))}
-          </div>
+              <div>
+                <img src='./assets/images/maynooth/wf2.png' alt='wireframe' />
+              </div>
+              <div>
+                <img src='./assets/images/maynooth/wf3.png' alt='wireframe' />
+              </div>
+            </div>
+          ) : (
+            <div className={styles.wireframes}>
+              <Magnifier
+                src='./assets/images/maynooth/wf1.png'
+                zoomFactor={2}
+              />
+              <Magnifier
+                src='./assets/images/maynooth/wf2.png'
+                zoomFactor={2}
+              />
+              <Magnifier
+                src='./assets/images/maynooth/wf3.png'
+                zoomFactor={2}
+              />
+            </div>
+          )}
+          {isPhone ? (
+            <div className={styles.colors}>
+              <div className={styles.title}>Colors:</div>
+              <div>
+                {colors.map((color) => (
+                  <div key={color} className={styles.color}>
+                    <div style={{ backgroundColor: color }}></div>
+                    <div>{color}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className={styles.colors}>
+              <div className={styles.title}>Colors:</div>
+              {colors.map((color) => (
+                <div key={color} className={styles.color}>
+                  <div style={{ backgroundColor: color }}></div>
+                  <div>{color}</div>
+                </div>
+              ))}
+            </div>
+          )}
           <div className={styles.title}>Fonts:</div>
           <div className={styles.fonts}>
             <div>
@@ -94,18 +139,101 @@ export default () => {
           <div className={styles.title}>
             High-fidelity Design <span>(Web and Mobile versions):</span>
           </div>
-          <div className={styles.designs1}>
-            <Magnifier src="./assets/images/maynooth/p1.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/p2.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/p3.png" zoomFactor={2} />
-          </div>
-          <div className={styles.designs2}>
-            <Magnifier src="./assets/images/maynooth/p4.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/p5.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/p6.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/p7.png" zoomFactor={2} />
-            <Magnifier src="./assets/images/maynooth/p8.png" zoomFactor={2} />
-          </div>
+          {isPhone ? (
+            <>
+              <div className={styles.designs1}>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p1.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p2.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p3.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+              </div>
+              <div className={styles.designs2}>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p4.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p5.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p6.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p7.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+                <div>
+                  <img
+                    src='./assets/images/maynooth/p8.png'
+                    alt='high fidelity design'
+                  />
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className={styles.designs1}>
+                <Magnifier
+                  src='./assets/images/maynooth/p1.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/maynooth/p2.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/maynooth/p3.png'
+                  zoomFactor={2}
+                />
+              </div>
+              <div className={styles.designs2}>
+                <Magnifier
+                  src='./assets/images/maynooth/p4.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/maynooth/p5.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/maynooth/p6.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/maynooth/p7.png'
+                  zoomFactor={2}
+                />
+                <Magnifier
+                  src='./assets/images/maynooth/p8.png'
+                  zoomFactor={2}
+                />
+              </div>
+            </>
+          )}
         </div>
         <Footer />
       </div>

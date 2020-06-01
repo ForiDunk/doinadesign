@@ -17,9 +17,6 @@
     padding: cvw(40) $padding-medium;
     text-align: center;
   }
-  @media screen and (max-width: $break-small) {
-    padding: cvw(40) $padding-medium;
-  }
 }
 .title {
   font-weight: bold;
