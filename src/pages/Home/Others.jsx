@@ -19,7 +19,7 @@ export default ({ setActive }) => {
   }, [setActive]);
 
   return (
-    <div id="others" className={styles.others}>
+    <div id='others' className={styles.others}>
       <div className={styles.title}>OTHER ARTSY HOBBIES</div>
       <div className={styles.text}>
         I have been always passionate about drawing and tattoos. In 2018 I’ve
@@ -29,24 +29,24 @@ export default ({ setActive }) => {
       <div className={styles.row}>
         {firstRow.map((item, i) => (
           <img
-            loading="lazy"
-            key={item.image}
+            loading='lazy'
+            key={item.url}
             className={styles.img}
             src={`./assets/images/others/${i + 1}.png`}
             onClick={() => openTo(item.url)}
-            alt="Art"
+            alt='Art'
           />
         ))}
       </div>
       <div className={styles.row}>
         {secondRow.map((item, i) => (
           <img
-            loading="lazy"
-            key={item.image}
+            loading='lazy'
+            key={item.url}
             className={styles.img}
             src={`./assets/images/others/${i + 9}.png`}
             onClick={() => openTo(item.url)}
-            alt="Art"
+            alt='Art'
           />
         ))}
       </div>

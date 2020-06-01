@@ -52,4 +52,24 @@
       }
     }
   }
+  @media screen and (max-width: $break-small) {
+    .text {
+      font-size: cvw(64);
+      line-height: cvw(100);
+    }
+
+    .socials {
+      .social,
+      a {
+        display: inline-block;
+        margin-right: cvw(50);
+        height: cvw(100);
+        width: cvw(100);
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
 }

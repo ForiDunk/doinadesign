@@ -17,6 +17,9 @@
     padding: cvw(40) $padding-medium;
     text-align: center;
   }
+  @media screen and (max-width: $break-small) {
+    padding: cvw(40) $padding-medium;
+  }
 }
 .title {
   font-weight: bold;
@@ -40,6 +43,10 @@
     @media screen and (max-width: $break-medium) {
       font-size: cvw(54);
     }
+    @media screen and (max-width: $break-small) {
+      font-size: cvw(108);
+      margin-bottom: cvw(124);
+    }
   }
   .text {
     font-size: cvw(24);
@@ -47,6 +54,10 @@
     @media screen and (max-width: $break-medium) {
       font-size: cvw(36);
       line-height: cvw(60);
+    }
+    @media screen and (max-width: $break-small) {
+      font-size: cvw(80);
+      line-height: cvw(110);
     }
   }
 }
@@ -62,6 +73,9 @@
   z-index: 2;
   width: 100%;
   text-align: center;
+  @media screen and (max-width: $break-small) {
+    top: cvw(60);
+  }
 }
 .header {
   padding: $padding;
@@ -118,6 +132,34 @@
         margin-right: cvw(97);
         height: cvw(100);
         width: cvw(100);
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $break-small) {
+    padding: $padding-small;
+    padding-bottom: cvw(200);
+
+    .title {
+      font-size: cvw(168);
+      margin-top: $padding;
+    }
+    .text {
+      font-size: cvw(96);
+      line-height: cvw(120);
+      max-width: 90%;
+    }
+
+    .socials {
+      .social,
+      a {
+        display: inline-block;
+        margin-right: cvw(150);
+        height: cvw(150);
+        width: cvw(150);
 
         &:last-child {
           margin: 0;
@@ -268,6 +310,63 @@
       }
     }
   }
+  @media screen and (max-width: $break-small) {
+    padding-top: cvw(200);
+    .project {
+      .projectImg {
+        max-width: 90%;
+        width: 100%;
+        & > img {
+          height: 60vw;
+        }
+      }
+
+      .projectMeta {
+        padding-bottom: cvw(32);
+        width: 100%;
+        .title {
+          font-size: cvw(84);
+          line-height: cvw(84);
+          margin: 0;
+        }
+        .text {
+          margin: cvw(80) 0 cvw(96) 0;
+        }
+      }
+
+      &:last-child {
+        height: unset;
+        .projectMeta {
+          padding-bottom: 0;
+          margin-top: cvw(64);
+          margin-bottom: cvw(110);
+        }
+      }
+
+      &:nth-child(odd) {
+        margin: cvw(200) 0;
+        flex-direction: column-reverse;
+        .projectMeta {
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      img.projectImg {
+        transform: unset;
+        z-index: 1;
+      }
+    }
+
+    & > div:nth-child(3) {
+      img.projectImg {
+        transform: unset;
+        z-index: 1;
+      }
+    }
+  }
 }
 
 /***** ABOUT ME *****/
@@ -321,6 +420,22 @@
       }
     }
   }
+  @media screen and (max-width: $break-small) {
+    .container {
+      .text {
+        p:last-child {
+          margin-top: cvw(48);
+          margin-bottom: cvw(80);
+        }
+      }
+
+      .avatar {
+        height: cvw(850);
+        width: cvw(850);
+        margin: cvw(10) 0 cvw(10) cvw(10);
+      }
+    }
+  }
 }
 
 /***** OTHERS *****/
@@ -356,6 +471,14 @@
       .img {
         width: 22%;
         margin-top: cvw(72);
+      }
+    }
+  }
+  @media screen and (max-width: $break-small) {
+    .row {
+      .img {
+        width: 23%;
+        margin-top: cvw(38.4);
       }
     }
   }
