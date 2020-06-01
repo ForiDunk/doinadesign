@@ -25,7 +25,10 @@ export default ({ setActive }) => {
         id='home'
         className={styles.header}
         style={{
-          height: window.innerWidth <= window.innerHeight ? 'unset' : '100vh',
+          height:
+            window.innerWidth < 768 && window.innerWidth <= window.innerHeight
+              ? 'unset'
+              : '100vh',
         }}
       >
         <div className={styles.title}>Hi, I’m Doina.</div>
